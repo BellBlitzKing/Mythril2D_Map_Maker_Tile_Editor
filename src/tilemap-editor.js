@@ -101,6 +101,16 @@
                 </div>
             </div>
         </div>
+
+            <div  id="mapSelectContainer">
+            | <select name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
+            <button id="replaceTilesetBtn" title="replace tileset">r</button>
+            <input id="tilesetReplaceInput" type="file" style="display: none" />
+            <button id="addTilesetBtn" title="add tileset">+</button>
+            <input id="tilesetReadInput" type="file" style="display: none" />
+            <button id="removeTilesetBtn" title="remove">-</button>
+            </div>
+        
         <div>
             <div id="toolButtonsWrapper" class="tool_wrapper">             
               <input id="tool0" type="radio" value="0" name="tool" checked class="hidden"/>
@@ -145,14 +155,7 @@
         <div class="card_left_column">
         <details class="details_container sticky_left" id="tilesetDataDetails" open="true">
           <summary >
-            <span  id="mapSelectContainer">
-            | <select name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
-            <button id="replaceTilesetBtn" title="replace tileset">r</button>
-            <input id="tilesetReplaceInput" type="file" style="display: none" />
-            <button id="addTilesetBtn" title="add tileset">+</button>
-            <input id="tilesetReadInput" type="file" style="display: none" />
-            <button id="removeTilesetBtn" title="remove">-</button>
-            </span>
+
           </summary>
               <div class="tileset_opt_field">
                 <span>Tile size:</span>
@@ -164,9 +167,9 @@
                 <span style="display: none; visibility: hidden;">Tileset loader:</span>
                 <select style="display: none; visibility: hidden;" name="tileSetLoaders" id="tileSetLoadersSel"></select>
               </div>
-              <div style="display: none; visibility: hidden;" class="tileset_info" id="tilesetSrcLabel"></div>
-              <div style="display: none; visibility: hidden;" class="tileset_info" id="tilesetHomeLink"></div>
-              <div style="display: none; visibility: hidden;" class="tileset_info" id="tilesetDescriptionLabel"></div> 
+              <div class="tileset_info" id="tilesetSrcLabel"></div>
+              <div class="tileset_info" id="tilesetHomeLink"></div>
+              <div class="tileset_info" id="tilesetDescriptionLabel"></div> 
           </div>
 
         </details>
