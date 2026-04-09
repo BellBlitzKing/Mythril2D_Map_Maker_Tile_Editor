@@ -155,8 +155,6 @@
             <label id="zoomOut" title="Zoom out">🔎️-</label>
             <label id="zoomLabel">️</label>
         </div>
-
-<button class="item" title="Export Map as image">Export Map as image</button>
             
         <div style="display: none; visibility: hidden;">
             <button style="display: none; visibility: hidden;" class="primary-button" id="confirmBtn">"apply"</button>
@@ -1457,10 +1455,10 @@
             },
         }
         apiTileMapExporters = tileMapExporters;
-        //apiTileMapExporters.exportAsImage = {
-          //  name: "Export Map as image",
-           // transformer: exportImage
-        //}
+        apiTileMapExporters.exportAsImage = {
+            name: "Export Map as image",
+            transformer: exportImage
+        }
         apiTileMapExporters.saveData = {
             name: "Download Json file",
             transformer: exportJson
