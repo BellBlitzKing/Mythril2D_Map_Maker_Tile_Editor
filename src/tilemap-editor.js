@@ -120,7 +120,7 @@
             <div id="toolButtonsWrapper" class="tool_wrapper">             
               <input id="tool0" type="radio" value="0" name="tool" checked class="hidden"/>
               <label for="tool0" title="paint tiles" data-value="0" class="menu">
-                  <div id="flipBrushIndicator">🖌️</div>
+                  <div id="flipBrushIndicator">✏️</div>
                   <div class="dropdown">
                     <div class="item nohover">Brush tool options</div>
                     <div class="item">
@@ -139,20 +139,20 @@
               <input id="tool4" type="radio" value="4" name="tool" class="hidden"/> 
               <label for="tool4" title="random from selected" data-value="4">🎲</label>
                <input id="tool5" type="radio" value="5" name="tool" class="hidden"/> 
-              <label for="tool5" title="fill on layer" data-value="5">🌈</label>
+              <label for="tool5" title="fill on layer" data-value="5">🪣🫗</label>
             </div>
         </div>
 
         <div class="tool_wrapper">
-            <label id="undoBtn" title="Undo">↩️️</label>
-            <label id="redoBtn" title="Redo">🔁️</label>
-            <label id="zoomIn" title="Zoom in">🔎️+</label>
+            <label id="undoBtn" title="Undo">undo ↩️️</label>
+            <label id="redoBtn" title="Redo">redo 🔁️</label>
+            <label id="zoomIn" title="Zoom in">zoom 🔎️+</label>
             <label id="zoomOut" title="Zoom out">🔎️-</label>
             <label id="zoomLabel">️</label>
         </div>
             
         <div>
-            <button style="visibility: hidden;" class="primary-button" id="confirmBtn">"apply"</button>
+            <button style="display: none; visibility: hidden;" class="primary-button" id="confirmBtn">"apply"</button>
         </div>
 
       </div>
