@@ -114,6 +114,8 @@
             <div class="tileset_opt_field">
                 <span>Size:</span>
                 <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
+                <label> &hairsp; &hairsp;  &hairsp; &hairsp; Settings:</label>
+                <a class="button" href="#popup1">⚙️🎚️</a>
             </div>    
         
         <div>
@@ -263,7 +265,7 @@
             <button id="addMapBtn" title="Add tilemap">+</button>
             <button id="removeMapBtn" title="Remove tilemap">-</button>        
             <button id="duplicateMapBtn" title="Duplicate tilemap">📑</button>     
-            <a class="button" href="#popup1">🎚️</a>
+            
             <div id="popup1" class="overlay">
             <div class="popup">
             <h4>TileMap settings</h4>
