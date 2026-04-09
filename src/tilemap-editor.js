@@ -169,7 +169,7 @@
           </div>
 
         </details>
-        <div class="select_container layer sticky_top sticky_left" id="tilesetSelectContainer">
+        <div style="display: none; visibility: hidden; " class="select_container layer sticky_top sticky_left" id="tilesetSelectContainer">
             <span id="setSymbolsVisBtn">👓️</span>
 
             <select name="tileData" id="tileDataSel">
