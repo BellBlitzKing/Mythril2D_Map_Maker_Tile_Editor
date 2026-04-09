@@ -152,7 +152,7 @@
         </div>
             
         <div>
-            <button class="primary-button" id="confirmBtn">"apply"</button>
+            <button style="visibility: hidden;" class="primary-button" id="confirmBtn">"apply"</button>
         </div>
 
       </div>
