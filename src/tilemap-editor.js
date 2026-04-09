@@ -165,6 +165,16 @@
       </div>
       <div class="card_body">
         <div class="card_left_column">
+
+            <div id="mapSelectContainer">
+            | <select name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
+            <button id="replaceTilesetBtn" title="replace tileset">r</button>
+            <input id="tilesetReplaceInput" type="file" style="display: none" />
+            <button id="addTilesetBtn" title="add tileset">+</button>
+            <input id="tilesetReadInput" type="file" style="display: none" />
+            <button id="removeTilesetBtn" title="remove">-</button>
+            </div>
+        
         <details style="display: none; visibility: hidden;" class="details_container sticky_left" id="tilesetDataDetails" open="true">
           <summary >
 
@@ -180,8 +190,8 @@
               <div class="tileset_info" id="tilesetHomeLink"></div>
               <div class="tileset_info" id="tilesetDescriptionLabel"></div> 
           </div>
-
         </details>
+        
         <div style="display: none; visibility: hidden;" class="select_container layer sticky_top sticky_left" id="tilesetSelectContainer">
             <span id="setSymbolsVisBtn">👓️</span>
 
