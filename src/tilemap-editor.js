@@ -131,7 +131,7 @@
 
             <div class="tileset_opt_field">
                 <label>Clear map:</label>
-                <button id="clearCanvasBtn" title="clear map">⊞ 🔄</button>
+                <button id="clearCanvasBtn" title="clear map">⊞ 🗑️</button>
                 <span> &hairsp; &hairsp;  &hairsp; &hairsp; Grid Size:</span>
                 <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
                 <label> &hairsp; &hairsp;  &hairsp; &hairsp; Options:</label>
@@ -172,7 +172,7 @@
         </details>
 
             <div class="select_container layer sticky_top sticky_left"  id="mapSelectContainer">
-            Tileset: <select name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
+            Tileset <select name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
             <button id="replaceTilesetBtn" title="replace tileset">r</button>
             <input id="tilesetReplaceInput" type="file" style="display: none" />
             <button id="addTilesetBtn" title="add tileset">+</button>
@@ -268,7 +268,7 @@
             <select name="mapsData" id="mapsDataSel"></select>
             <button id="addMapBtn" title="Add tilemap">+</button>
             <button id="removeMapBtn" title="Remove tilemap">-</button>        
-            <button id="duplicateMapBtn" title="Duplicate tilemap">📋 ⿻ 🗐</button>     
+            <button id="duplicateMapBtn" title="Clone Copy map">⧉</button>     
             
             <div id="popup1" class="overlay">
             <div class="popup">
