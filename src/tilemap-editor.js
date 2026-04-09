@@ -159,17 +159,17 @@
                 <span>Tile size:</span>
                 <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
               </div>
-              <div class="tileset_opt_field">
+              <div style="display: none; visibility: hidden;" class="tileset_opt_field">
                 <span>Tileset loader:</span>
                 <select name="tileSetLoaders" id="tileSetLoadersSel"></select>
               </div>
-              <div class="tileset_info" id="tilesetSrcLabel"></div>
-              <div class="tileset_info" id="tilesetHomeLink"></div>
-              <div class="tileset_info" id="tilesetDescriptionLabel"></div> 
+              <div style="display: none; visibility: hidden;" class="tileset_info" id="tilesetSrcLabel"></div>
+              <div style="display: none; visibility: hidden;" class="tileset_info" id="tilesetHomeLink"></div>
+              <div style="display: none; visibility: hidden;" class="tileset_info" id="tilesetDescriptionLabel"></div> 
           </div>
 
         </details>
-        <div style="display: none; visibility: hidden; " class="select_container layer sticky_top sticky_left" id="tilesetSelectContainer">
+        <div style="display: none; visibility: hidden;" class="select_container layer sticky_top sticky_left" id="tilesetSelectContainer">
             <span id="setSymbolsVisBtn">👓️</span>
 
             <select name="tileData" id="tileDataSel">
