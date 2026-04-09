@@ -101,22 +101,6 @@
                 </div>
             </div>
         </div>
-
-            <span id="mapSelectContainer">
-            | <select name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
-            <button id="replaceTilesetBtn" title="replace tileset">r</button>
-            <input id="tilesetReplaceInput" type="file" style="display: none" />
-            <button id="addTilesetBtn" title="add tileset">+</button>
-            <input id="tilesetReadInput" type="file" style="display: none" />
-            <button id="removeTilesetBtn" title="remove">-</button>
-            </span>
-
-            <div class="tileset_opt_field">
-                <span>Size:</span>
-                <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
-                <label> &hairsp; &hairsp;  &hairsp; &hairsp; Settings:</label>
-                <a class="button" href="#popup1">⚙️🎚️</a>
-            </div>    
         
         <div>
             <div id="toolButtonsWrapper" class="tool_wrapper">             
@@ -145,6 +129,22 @@
             </div>
         </div>
 
+            <div id="mapSelectContainer">
+            | <select name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
+            <button id="replaceTilesetBtn" title="replace tileset">r</button>
+            <input id="tilesetReplaceInput" type="file" style="display: none" />
+            <button id="addTilesetBtn" title="add tileset">+</button>
+            <input id="tilesetReadInput" type="file" style="display: none" />
+            <button id="removeTilesetBtn" title="remove">-</button>
+            </div>
+
+            <div class="tileset_opt_field">
+                <span>Size:</span>
+                <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
+                <label> &hairsp; &hairsp;  &hairsp; &hairsp; Settings:</label>
+                <a class="button" href="#popup1">⚙️🎚️</a>
+            </div>   
+
         <div class="tool_wrapper">
             <label id="undoBtn" title="Undo">undo ↩️️</label>
             <label id="redoBtn" title="Redo">redo 🔁️</label>
@@ -153,7 +153,7 @@
             <label id="zoomLabel">️</label>
         </div>
             
-        <div>
+        <div style="display: none; visibility: hidden;">
             <button style="display: none; visibility: hidden;" class="primary-button" id="confirmBtn">"apply"</button>
         </div>
 
