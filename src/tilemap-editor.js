@@ -258,8 +258,8 @@
         <div class="card_right-column" style="position:relative" id="canvas_drag_area">
         <div class="canvas_wrapper" id="canvas_wrapper">
           <canvas id="mapCanvas" width="${width}" height="${height}"></canvas>
-          <div class="canvas_resizer" resizerdir="y"><input value="1" type="number" min="1" resizerdir="y"><small><span>⬆ y ⬇</span></small>
-          <small><br><br><label for="tool2" title="pan" data-value="2">◀🌐▶</label></small>
+          <div class="canvas_resizer" resizerdir="y"><input value="1" type="number" min="1" resizerdir="y"><small><span>  ⬆ y ⬇</span></small>
+          <small><br><br><label for="tool2" title="pan around map" data-value="2">◀🌐▶</label></small>
           </div>
           <div class="canvas_resizer vertical" resizerdir="x"><input value="${mapTileWidth}" type="number" min="1" resizerdir="x"><small><span>⬅ x ➡</span></small>
           </div>
@@ -1447,10 +1447,10 @@
             },
         }
         apiTileMapExporters = tileMapExporters;
-        apiTileMapExporters.exportAsImage = {
-            name: "Export Map as image",
-            transformer: exportImage
-        }
+        //apiTileMapExporters.exportAsImage = {
+          //  name: "Export Map as image",
+           // transformer: exportImage
+        //}
         apiTileMapExporters.saveData = {
             name: "Download Json file",
             transformer: exportJson
