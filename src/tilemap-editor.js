@@ -77,7 +77,7 @@
         <a id="downloadAnchorElem" style="display:none"></a>
        <div class="tileset_opt_field header">
        <div class="menu file">
-            <span> File </span>
+            <span> File 💾 </span>
             <div class="dropdown" id="fileMenuDropDown">                            
                 <a style="display: none; visibility: hidden;" class="button item button-as-link" href="#popup2">About</a>
                 <div id="popup2" class="overlay">
@@ -172,7 +172,7 @@
         </details>
 
             <div class="select_container layer sticky_top sticky_left"  id="mapSelectContainer">
-            | <select name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
+            Tileset: <select name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
             <button id="replaceTilesetBtn" title="replace tileset">r</button>
             <input id="tilesetReplaceInput" type="file" style="display: none" />
             <button id="addTilesetBtn" title="add tileset">+</button>
@@ -268,7 +268,7 @@
             <select name="mapsData" id="mapsDataSel"></select>
             <button id="addMapBtn" title="Add tilemap">+</button>
             <button id="removeMapBtn" title="Remove tilemap">-</button>        
-            <button id="duplicateMapBtn" title="Duplicate tilemap">📑</button>     
+            <button id="duplicateMapBtn" title="Duplicate tilemap">📋 ⿻ 🗐</button>     
             
             <div id="popup1" class="overlay">
             <div class="popup">
@@ -1446,7 +1446,7 @@
         }
         apiTileMapExporters = tileMapExporters;
         apiTileMapExporters.exportAsImage = {
-            name: "💾 Save Map as image 🖼️",
+            name: "Save Map as image 🖼️",
             transformer: exportImage
         }
         apiTileMapExporters.saveData = {
@@ -1463,7 +1463,7 @@
         }
         apiTileMapImporters = tileMapImporters;
         apiTileMapImporters.openData = {
-            name: "Open Json file",
+            name: "Open/Upload Json file ⤴️",
             onSelectFiles: (setData, files) => {
                 const readFile = new FileReader();
                 readFile.onload = (e) => {
