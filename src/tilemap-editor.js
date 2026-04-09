@@ -102,14 +102,19 @@
             </div>
         </div>
 
-            <div  id="mapSelectContainer">
+            <span id="mapSelectContainer">
             | <select name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
             <button id="replaceTilesetBtn" title="replace tileset">r</button>
             <input id="tilesetReplaceInput" type="file" style="display: none" />
             <button id="addTilesetBtn" title="add tileset">+</button>
             <input id="tilesetReadInput" type="file" style="display: none" />
             <button id="removeTilesetBtn" title="remove">-</button>
-            </div>
+            </span>
+
+            <div class="tileset_opt_field">
+                <span>Size:</span>
+                <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
+            </div>    
         
         <div>
             <div id="toolButtonsWrapper" class="tool_wrapper">             
@@ -153,14 +158,11 @@
       </div>
       <div class="card_body">
         <div class="card_left_column">
-        <details class="details_container sticky_left" id="tilesetDataDetails" open="true">
+        <details style="display: none; visibility: hidden;" class="details_container sticky_left" id="tilesetDataDetails" open="true">
           <summary >
 
           </summary>
-              <div class="tileset_opt_field">
-                <span>Tile size:</span>
-                <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
-              </div>          
+      
           <div style="display: none; visibility: hidden;">
 
               <div style="display: none; visibility: hidden;" class="tileset_opt_field">
