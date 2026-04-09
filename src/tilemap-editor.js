@@ -139,11 +139,11 @@
             </div>
 
             <div class="tileset_opt_field">
-                <label>Clear Map</label>
-                <button id="clearCanvasBtn" title="Clear map:">⊞ 🔄</button>
+                <label>Clear map:</label>
+                <button id="clearCanvasBtn" title="clear map">⊞ 🔄</button>
                 <span> &hairsp; &hairsp;  &hairsp; &hairsp; Grid Size:</span>
                 <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
-                <label> &hairsp; &hairsp;  &hairsp; &hairsp; Settings:</label>
+                <label> &hairsp; &hairsp;  &hairsp; &hairsp; Options:</label>
                 <a class="button" href="#popup1">⚙️🎚️</a>
 
             </div>
@@ -156,7 +156,7 @@
             <label id="zoomLabel">️</label>
         </div>
 
-<span class="item" title="Export Map as image">Export Map as image</span>
+<button class="item" title="Export Map as image">Export Map as image</button>
             
         <div style="display: none; visibility: hidden;">
             <button style="display: none; visibility: hidden;" class="primary-button" id="confirmBtn">"apply"</button>
