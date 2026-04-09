@@ -172,7 +172,7 @@
         </details>
 
             <div class="select_container layer sticky_top sticky_left"  id="mapSelectContainer">
-            Tileset <select name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
+            Tileset:    <select name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
             <button id="replaceTilesetBtn" title="replace tileset">r</button>
             <input id="tilesetReplaceInput" type="file" style="display: none" />
             <button id="addTilesetBtn" title="add tileset">+</button>
@@ -268,7 +268,7 @@
             <select name="mapsData" id="mapsDataSel"></select>
             <button id="addMapBtn" title="Add tilemap">+</button>
             <button id="removeMapBtn" title="Remove tilemap">-</button>        
-            <button id="duplicateMapBtn" title="Clone Copy map">⧉</button>     
+            <button id="duplicateMapBtn" title="Clone Copy map"><b>⧉</b></button>     
             
             <div id="popup1" class="overlay">
             <div class="popup">
