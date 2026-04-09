@@ -263,7 +263,7 @@
           </div>
         </div>
         </div>
-      <div class="card_right-column layers">
+      <div style="margin-right: 20px;" class="card_right-column layers">
       <div id="mapSelectContainer" class="tilemaps_selector">
             <select name="mapsData" id="mapsDataSel"></select>
             <button id="addMapBtn" title="Add tilemap">+</button>
