@@ -133,13 +133,13 @@
               <input id="tool1" type="radio" value="1" name="tool" class="hidden"/>
               <label for="tool1" title="erase tiles" data-value="1">🗑️</label>
               <input id="tool2" type="radio" value="2" name="tool" class="hidden"/> 
-              <label for="tool2" title="pan" data-value="2">✋</label>
+              <label for="tool2" title="pan" data-value="2"> ◀️🗺️▶️ </label>
               <input id="tool3" type="radio" value="3" name="tool" class="hidden"/> 
-              <label for="tool3" title="pick tile" data-value="3">🎨</label>
+              <label for="tool3" title="pick tile" data-value="3"> 🎨👆 </label>
               <input id="tool4" type="radio" value="4" name="tool" class="hidden"/> 
-              <label for="tool4" title="random from selected" data-value="4">🎲</label>
+              <label for="tool4" title="random from selected" data-value="4"> 🎲📚 </label>
                <input id="tool5" type="radio" value="5" name="tool" class="hidden"/> 
-              <label for="tool5" title="fill on layer" data-value="5">🪣🫗</label>
+              <label for="tool5" title="fill on layer" data-value="5"> 🪣🧱 </label>
             </div>
         </div>
 
@@ -252,7 +252,9 @@
         <div class="canvas_wrapper" id="canvas_wrapper">
           <canvas id="mapCanvas" width="${width}" height="${height}"></canvas>
           <div class="canvas_resizer" resizerdir="y"><input value="1" type="number" min="1" resizerdir="y"><span>-y-</span></div>
-          <div class="canvas_resizer vertical" resizerdir="x"><input value="${mapTileWidth}" type="number" min="1" resizerdir="x"><span>-x-</span></div>
+          <div class="canvas_resizer vertical" resizerdir="x"><input value="${mapTileWidth}" type="number" min="1" resizerdir="x"><span>-x-</span>
+          <small><br><br><label for="tool2" title="pan" data-value="2">◀🌐▶</label></small>
+          </div>
         </div>
         </div>
       <div class="card_right-column layers">
