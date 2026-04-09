@@ -143,7 +143,9 @@
                 <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
                 <label> &hairsp; &hairsp;  &hairsp; &hairsp; Settings:</label>
                 <a class="button" href="#popup1">⚙️🎚️</a>
-            </div>   
+                <label> &hairsp; &hairsp;  &hairsp; &hairsp; Clear Map</label>
+                <button id="clearCanvasBtn" title="Clear map">🔄⊞</button>
+            </div>
 
         <div class="tool_wrapper">
             <label id="undoBtn" title="Undo">undo ↩️️</label>
@@ -281,7 +283,6 @@
                 <br/><br/>
                 <div class="tileset_opt_field">
                     <button id="renameMapBtn" title="Rename map">Rename</button>
-                    <button id="clearCanvasBtn" title="Clear map">Clear</button>
                 </div>
             </div>
             </div>
