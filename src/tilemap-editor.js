@@ -172,7 +172,7 @@
         </details>
 
             <div class="select_container layer sticky_top sticky_left"  id="mapSelectContainer">
-            Tileset:    <select name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
+            <small>Tileset:    </small><select name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
             <button id="replaceTilesetBtn" title="replace tileset">r</button>
             <input id="tilesetReplaceInput" type="file" style="display: none" />
             <button id="addTilesetBtn" title="add tileset">+</button>
@@ -263,7 +263,7 @@
           </div>
         </div>
         </div>
-      <div style="margin-right: 20px;" class="card_right-column layers">
+      <div style="margin-right: 20px; margin-top: 10px;" class="card_right-column layers">
       <div id="mapSelectContainer" class="tilemaps_selector">
             <select name="mapsData" id="mapsDataSel"></select>
             <button id="addMapBtn" title="Add tilemap">+</button>
