@@ -79,7 +79,7 @@
        <div class="menu file">
             <span> File </span>
             <div class="dropdown" id="fileMenuDropDown">                            
-                <a class="button item button-as-link" href="#popup2">About</a>
+                <a style="display: none; visibility: hidden;" class="button item button-as-link" href="#popup2">About</a>
                 <div id="popup2" class="overlay">
                 <div class="popup">
                 <h4>Tilemap editor</h4>
