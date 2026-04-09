@@ -154,6 +154,8 @@
             <label id="zoomOut" title="Zoom out">🔎️-</label>
             <label id="zoomLabel">️</label>
         </div>
+
+<span class="item" title="Export Map as image">Export Map as image</span>
             
         <div style="display: none; visibility: hidden;">
             <button style="display: none; visibility: hidden;" class="primary-button" id="confirmBtn">"apply"</button>
