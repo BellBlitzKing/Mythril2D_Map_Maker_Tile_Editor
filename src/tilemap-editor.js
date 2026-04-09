@@ -1446,19 +1446,19 @@
         }
         apiTileMapExporters = tileMapExporters;
         apiTileMapExporters.exportAsImage = {
-            name: "Export Map as image",
+            name: "💾 Save Map as image 🖼️",
             transformer: exportImage
         }
         apiTileMapExporters.saveData = {
-            name: "Download Json file",
+            name: "Save as Json file 📜",
             transformer: exportJson
         }
         apiTileMapExporters.analizeTilemap = {
-            name: "Analize tilemap",
+            name: "Analize tilemap 📈",
             transformer: drawAnaliticsReport
         }
         apiTileMapExporters.exportTilesFromMap = {
-            name: "Extract tileset from map",
+            name: "Get tileset from map 📚 🗺️",
             transformer: exportUniqueTiles
         }
         apiTileMapImporters = tileMapImporters;
