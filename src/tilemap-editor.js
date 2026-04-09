@@ -172,7 +172,7 @@
         </details>
 
             <div class="select_container layer sticky_top sticky_left"  id="mapSelectContainer">
-            <small>Tileset:    </small><select name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
+            <small>Tileset:  </small><select name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
             <button id="replaceTilesetBtn" title="replace tileset">r</button>
             <input id="tilesetReplaceInput" type="file" style="display: none" />
             <button id="addTilesetBtn" title="add tileset">+</button>
@@ -1989,10 +1989,10 @@
         document.getElementById("zoomOut").addEventListener("click", zoomOut);
         document.getElementById("setSymbolsVisBtn").addEventListener("click", ()=>toggleSymbolsVisible())
         // Scroll zoom in/out - use wheel instead of scroll event since theres no scrollbar on the map
-        canvas.addEventListener('wheel', e=> {
-            if (e.deltaY < 0) zoomIn();
-            else zoomOut();
-        });
+        //canvas.addEventListener('wheel', e=> {
+          //  if (e.deltaY < 0) zoomIn();
+           // else zoomOut();
+        //});
 
         loadData(tileMapData)
         if (appState) {
