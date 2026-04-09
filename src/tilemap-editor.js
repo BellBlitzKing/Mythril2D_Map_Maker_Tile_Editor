@@ -154,14 +154,15 @@
             <button id="removeTilesetBtn" title="remove">-</button>
             </span>
           </summary>
-          <div>
               <div class="tileset_opt_field">
                 <span>Tile size:</span>
                 <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
-              </div>
+              </div>          
+          <div style="display: none; visibility: hidden;">
+
               <div style="display: none; visibility: hidden;" class="tileset_opt_field">
-                <span>Tileset loader:</span>
-                <select name="tileSetLoaders" id="tileSetLoadersSel"></select>
+                <span style="display: none; visibility: hidden;">Tileset loader:</span>
+                <select style="display: none; visibility: hidden;" name="tileSetLoaders" id="tileSetLoadersSel"></select>
               </div>
               <div style="display: none; visibility: hidden;" class="tileset_info" id="tilesetSrcLabel"></div>
               <div style="display: none; visibility: hidden;" class="tileset_info" id="tilesetHomeLink"></div>
