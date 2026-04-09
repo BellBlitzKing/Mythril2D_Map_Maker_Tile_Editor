@@ -139,12 +139,13 @@
             </div>
 
             <div class="tileset_opt_field">
-                <span>Size:</span>
+                <label>Clear Map</label>
+                <button id="clearCanvasBtn" title="Clear map:">⊞ 🔄</button>
+                <span> &hairsp; &hairsp;  &hairsp; &hairsp; Grid Size:</span>
                 <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
                 <label> &hairsp; &hairsp;  &hairsp; &hairsp; Settings:</label>
                 <a class="button" href="#popup1">⚙️🎚️</a>
-                <label> &hairsp; &hairsp;  &hairsp; &hairsp; Clear Map</label>
-                <button id="clearCanvasBtn" title="Clear map">🔄⊞</button>
+
             </div>
 
         <div class="tool_wrapper">
