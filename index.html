@@ -215,7 +215,7 @@
       {
         src:"https://bellblitzking.github.io/Mythril2D_Map_Maker_Tile_Editor/tilesets/Fantasy_Mythril2D_Tileset.png",
         name: "fantasy tileset",
-        tileSize: 16,
+        tileSize: 32,
         link: "https://google.com",
         description: `Demo tileset with a very very very very long description that can't barely fit there.
                 Still the author decided he has lots to say about the thing and even include a link`
@@ -224,9 +224,9 @@
         src: "https://i.imgur.com/ztwPZOI.png"
       }
     ];
-    let tileSize = 16;
-    let mapWidth = 16;
-    let mapHeight = 20;
+    let tileSize = 32;
+    let mapWidth = 15;
+    let mapHeight = 15;
     let tileMapData //= ioJsonData;
     const initTilemapEditor = () => {
       console.log("INIT with", {tileSetImages, tileSize})
@@ -335,8 +335,8 @@
                 tileSize = parseInt(extractedTileSizeMatch[1],10)
                 console.info("set tileSize from description", tileSize)
                 if(tileSize === 8){
-                  mapWidth = 20; // Detect map size for a gameboy room
-                  mapHeight = 18;
+                  mapWidth = 15; // Detect map size for a gameboy room
+                  mapHeight = 15;
                 }
               }
               extractedSourceMatch = image.description.match(/source\:\s*(.*)/);
