@@ -263,7 +263,10 @@
           </div>
         </div>
         </div>
-      <div style="margin-right: 20px; margin-top: 10px;" class="card_right-column layers">
+      <details style="margin-right: 20px; margin-top: 10px;" class="card_right-column layers">
+
+<summary>
+      
       <div id="mapSelectContainer" class="tilemaps_selector">
             <select name="mapsData" id="mapsDataSel"></select>
             <button id="addMapBtn" title="Add tilemap">+</button>
@@ -289,6 +292,8 @@
             </div>
             </div>
         </div>
+        
+</summary>
 
         <label class="sticky add_layer">
             <label id="activeLayerLabel" class="menu">
@@ -298,6 +303,7 @@
         </label>
         <div class="layers" id="layers">
       </div>
+      </details>
       </div>
     </div>
         `
