@@ -130,7 +130,7 @@
   flex: 3;
   overflow: auto;
   padding-right: 16px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
 .card_right-column.layers {
   flex: 1;
@@ -452,7 +452,7 @@ cursor: pointer;
   background-color: #00000094;
   padding: 2px;
   /* added below for Map selector */
-  width: 90%;
+  width: 85%;
   margin-bottom: 10px;
  }
 
