@@ -77,7 +77,7 @@
         <a id="downloadAnchorElem" style="display:none"></a>
        <div class="tileset_opt_field header">
        <div class="menu file">
-            <span>File Save 💾</span>
+            <span>File Save</span>
             <div class="dropdown" id="fileMenuDropDown">                            
                 <a style="display: none; visibility: hidden;" class="button item button-as-link" href="#popup2">About</a>
                 <div id="popup2" class="overlay">
@@ -130,19 +130,19 @@
         </div>
 
             <div class="tileset_opt_field">
-                <label>Clear map:</label>
+                <label>Clear:</label>
                 <button style="text-decoration: underline; text-underline-offset: 7px; border: none; background-color: inherit" id="clearCanvasBtn" title="clear map">🌐 🗑️</button>
-                <span> &hairsp; &hairsp;  &hairsp; &hairsp; Grid Size:</span>
+                <span> &hairsp; &hairsp;  &hairsp; &hairsp; Grid:</span>
                 <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
                 <label> &hairsp; &hairsp;  &hairsp; &hairsp; Options:</label>
-                <a style="text-underline-offset: 7px;" class="button" href="#popup1">⚙️🎚️</a>
+                <a style="text-underline-offset: 7px;" class="button" href="#popup1">⚙️</a>
 
             </div>
 
         <div class="tool_wrapper">
             <label id="undoBtn" title="Undo">undo ↩️️</label>
             <label id="redoBtn" title="Redo">redo 🔁️</label>
-            <label id="zoomIn" title="Zoom in">zoom 🔎️+</label>
+            <label id="zoomIn" title="Zoom in">🔎️+</label>
             <label id="zoomOut" title="Zoom out">🔎️-</label>
             <label id="zoomLabel">️</label>
         </div>
