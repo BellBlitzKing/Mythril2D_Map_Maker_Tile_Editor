@@ -225,8 +225,8 @@
       }
     ];
     let tileSize = 32;
-    let mapWidth = 15;
-    let mapHeight = 15;
+    let mapWidth = 14;
+    let mapHeight = 14;
     let tileMapData //= ioJsonData;
     const initTilemapEditor = () => {
       console.log("INIT with", {tileSetImages, tileSize})
@@ -335,8 +335,8 @@
                 tileSize = parseInt(extractedTileSizeMatch[1],10)
                 console.info("set tileSize from description", tileSize)
                 if(tileSize === 8){
-                  mapWidth = 15; // Detect map size for a gameboy room
-                  mapHeight = 15;
+                  mapWidth = 14; // Detect map size for a gameboy room
+                  mapHeight = 14;
                 }
               }
               extractedSourceMatch = image.description.match(/source\:\s*(.*)/);
