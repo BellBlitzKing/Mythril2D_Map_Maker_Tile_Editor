@@ -108,7 +108,7 @@
               <label for="tool0" title="paint tiles" data-value="0" class="menu">
                   <div style="text-decoration: underline; text-underline-offset: 7px;" id="flipBrushIndicator">✏️</div>
                   <div class="dropdown">
-                    <div class="item nohover">Brush tool options</div>
+                    <div class="item nohover">Pencil draw tool options</div>
                     <div class="item">
                         <label for="toggleFlipX" class="">Flip tile on x</label>
                         <input type="checkbox" id="toggleFlipX" style="display: none"> 
