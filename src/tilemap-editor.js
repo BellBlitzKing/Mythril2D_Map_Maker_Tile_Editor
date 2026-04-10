@@ -265,7 +265,7 @@
         </div>
       <details style="margin-right: 20px; margin-top: 10px;" class="card_right-column layers">
 
-<summary>
+<summary title="press the arrow to show/hide map & layer features"> |
       
       <div id="mapSelectContainer" class="tilemaps_selector">
             <select name="mapsData" id="mapsDataSel"></select>
