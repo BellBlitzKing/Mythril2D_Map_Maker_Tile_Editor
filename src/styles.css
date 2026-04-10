@@ -129,8 +129,8 @@
 .card_right-column {
   flex: 3;
   overflow: auto;
-  padding-right: 16px;
-  padding-bottom: 20px;
+  padding-right: 14px;
+  padding-bottom: 14px;
 }
 .card_right-column.layers {
   flex: 1;
