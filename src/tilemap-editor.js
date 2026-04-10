@@ -319,8 +319,8 @@
 
     let TILESET_ELEMENTS = [];
     let IMAGES = [{src:''}];
-    let ZOOM = 2;
-    let SIZE_OF_CROP = 16;
+    let ZOOM = 1;
+    let SIZE_OF_CROP = 32;
     let WIDTH = 0;
     let HEIGHT = 0;
     const TOOLS = {
@@ -336,7 +336,7 @@
     let ACTIVE_MAP = "";
     let DISPLAY_SYMBOLS = false;
     let SHOW_GRID = false;
-    const getEmptyMap = (name="map", mapWidth =16, mapHeight=20, tileSize = 32, gridColor="#00FFFF") =>
+    const getEmptyMap = (name="map", mapWidth =15, mapHeight=15, tileSize = 32, gridColor="#00FFFF") =>
         ({layers: [getEmptyLayer("bottom-ground"), getEmptyLayer("middle"), getEmptyLayer("top")], name,
             mapWidth, mapHeight, tileSize, width: mapWidth * SIZE_OF_CROP,height: mapHeight * SIZE_OF_CROP, gridColor });
 
