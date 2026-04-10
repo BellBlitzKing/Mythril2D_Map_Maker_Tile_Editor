@@ -106,7 +106,7 @@
             <div id="toolButtonsWrapper" class="tool_wrapper">             
               <input id="tool0" type="radio" value="0" name="tool" checked class="hidden"/>
               <label for="tool0" title="paint tiles" data-value="0" class="menu">
-                  <div id="flipBrushIndicator">✏️</div>
+                  <div style="text-decoration: underline; text-underline-offset: 7px;" id="flipBrushIndicator">✏️</div>
                   <div class="dropdown">
                     <div class="item nohover">Brush tool options</div>
                     <div class="item">
@@ -117,25 +117,25 @@
                   </div>
               </label>
               <input id="tool1" type="radio" value="1" name="tool" class="hidden"/>
-              <label for="tool1" title="erase tiles" data-value="1">🗑️</label>
+              <label style="text-decoration: underline; text-underline-offset: 7px;" for="tool1" title="erase tiles" data-value="1">🗑️</label>
               <input id="tool2" type="radio" value="2" name="tool" class="hidden"/> 
-              <label for="tool2" title="pan" data-value="2"> ◀️🗺️▶️ </label>
+              <label style="text-decoration: underline; text-underline-offset: 7px;" for="tool2" title="pan" data-value="2"> ◀️🗺️▶️ </label>
               <input id="tool3" type="radio" value="3" name="tool" class="hidden"/> 
-              <label for="tool3" title="pick tile" data-value="3"> 🎨👆 </label>
+              <label style="text-decoration: underline; text-underline-offset: 7px;" for="tool3" title="pick tile" data-value="3"> 🎨👆 </label>
               <input id="tool4" type="radio" value="4" name="tool" class="hidden"/> 
-              <label for="tool4" title="random from selected" data-value="4"> 🎲📚 </label>
+              <label style="text-decoration: underline; text-underline-offset: 7px;" for="tool4" title="random from selected" data-value="4"> 🎲📚 </label>
                <input id="tool5" type="radio" value="5" name="tool" class="hidden"/> 
-              <label for="tool5" title="fill on layer" data-value="5"> 🪣🧱 </label>
+              <label style="text-decoration: underline; text-underline-offset: 7px;" for="tool5" title="fill on layer" data-value="5"> 🪣🧱 </label>
             </div>
         </div>
 
             <div class="tileset_opt_field">
                 <label>Clear map:</label>
-                <button style="border: none; background-color: inherit" id="clearCanvasBtn" title="clear map">🪟 🗑️</button>
+                <button style="text-decoration: underline; text-underline-offset: 7px; border: none; background-color: inherit" id="clearCanvasBtn" title="clear map">🪟 🗑️</button>
                 <span> &hairsp; &hairsp;  &hairsp; &hairsp; Grid Size:</span>
                 <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
                 <label> &hairsp; &hairsp;  &hairsp; &hairsp; Options:</label>
-                <a class="button" href="#popup1">⚙️🎚️</a>
+                <a style="text-underline-offset: 7px;" class="button" href="#popup1">⚙️🎚️</a>
 
             </div>
 
