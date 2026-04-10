@@ -411,7 +411,7 @@ cursor: pointer;
 
 /*dark mode*/
 .tilemapjs_root {
-  color: #fbd5ff;
+  color: #dceeff;
   background-color: #0a0101;
   background: linear-gradient(0deg, rgb(0 0 0) 0%, rgb(84 84 84) 100%);
 }
