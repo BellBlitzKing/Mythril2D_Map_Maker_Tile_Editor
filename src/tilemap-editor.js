@@ -103,7 +103,7 @@
         </div>
         
         <div>
-            <div id="toolButtonsWrapper" class="tool_wrapper"> <label>Tools: </label>
+            <div id="toolButtonsWrapper" class="tool_wrapper"> <label title="Use tools to the right to build your map">Tools: </label>
               <input id="tool0" type="radio" value="0" name="tool" checked class="hidden"/>
               <label for="tool0" title="paint tiles" data-value="0" class="menu">
                   <div style="text-decoration: underline; text-underline-offset: 7px;" id="flipBrushIndicator">✏️</div>
@@ -296,9 +296,7 @@
 </summary>
 
         <label class="sticky add_layer">
-            <small><label id="activeLayerLabel" class="menu">
-            ✏️ Editing Layer
-            </label></small>
+            <small><label id="activeLayerLabel" class="menu">✏️ Edit Layer</label></small>
             <button id="addLayerBtn" title="Add layer">+</button>
         </label>
         <div class="layers" id="layers">
@@ -389,7 +387,7 @@
 
         document.querySelector(`.layer[tile-layer="${newLayer}"]`)?.classList.add('active');
         document.getElementById("activeLayerLabel").innerHTML = `
-            ✏️ Editing Layer: ${maps[ACTIVE_MAP].layers[newLayer]?.name} 
+            ✏️ Edit Layer: ${maps[ACTIVE_MAP].layers[newLayer]?.name} 
             <div class="dropdown left">
                 <div class="item nohover">Layer: ${maps[ACTIVE_MAP].layers[newLayer]?.name} </div>
                 <div class="item">
