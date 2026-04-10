@@ -280,7 +280,7 @@ cursor: pointer;
   padding: 2px;
 }
 .card_left_column{
-  min-width: 240px;
+  min-width: 280px;
   max-width: 310px;
   overflow: auto;
   padding-right: 3px;
