@@ -103,7 +103,7 @@
         </div>
         
         <div>
-            <div id="toolButtonsWrapper" class="tool_wrapper"> <label title="Use tools to the right to build your map">Tools: </label>
+            <div id="toolButtonsWrapper" class="tool_wrapper"> <label title="Use tools to the right to build your map"><small>Tools:</small></label>
               <input id="tool0" type="radio" value="0" name="tool" checked class="hidden"/>
               <label for="tool0" title="paint tiles" data-value="0" class="menu">
                   <div style="text-decoration: underline; text-underline-offset: 7px;" id="flipBrushIndicator">✏️</div>
