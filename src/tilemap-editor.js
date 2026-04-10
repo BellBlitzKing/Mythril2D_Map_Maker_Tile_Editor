@@ -339,7 +339,7 @@
     let DISPLAY_SYMBOLS = false;
     let SHOW_GRID = false;
     const getEmptyMap = (name="map", mapWidth =16, mapHeight=20, tileSize = 32, gridColor="#00FFFF") =>
-        ({layers: [getEmptyLayer("bottom"), getEmptyLayer("middle"), getEmptyLayer("top")], name,
+        ({layers: [getEmptyLayer("bottom-ground"), getEmptyLayer("middle"), getEmptyLayer("top")], name,
             mapWidth, mapHeight, tileSize, width: mapWidth * SIZE_OF_CROP,height: mapHeight * SIZE_OF_CROP, gridColor });
 
     const getEmptyTilesetTag = (name, code, tiles ={}) =>({name,code,tiles});
@@ -912,7 +912,7 @@
 
     const clearCanvas = () => {
         addToUndoStack();
-        maps[ACTIVE_MAP].layers = [getEmptyLayer("bottom"), getEmptyLayer("middle"), getEmptyLayer("top")];
+        maps[ACTIVE_MAP].layers = [getEmptyLayer("bottom-ground"), getEmptyLayer("middle"), getEmptyLayer("top")];
         setLayer(0);
         updateLayers();
         draw();
