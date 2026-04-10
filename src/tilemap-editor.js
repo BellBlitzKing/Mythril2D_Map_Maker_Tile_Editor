@@ -131,7 +131,7 @@
 
             <div class="tileset_opt_field">
                 <label>Clear map:</label>
-                <button id="clearCanvasBtn" title="clear map">⊞ 🗑️</button>
+                <button id="clearCanvasBtn" title="clear map"><b>⊞ 🗑️</b></button>
                 <span> &hairsp; &hairsp;  &hairsp; &hairsp; Grid Size:</span>
                 <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
                 <label> &hairsp; &hairsp;  &hairsp; &hairsp; Options:</label>
@@ -265,7 +265,7 @@
         </div>
       <details style="margin-right: 20px; margin-top: 10px;" class="card_right-column layers">
 
-<summary title="press the arrow to show/hide map & layer features"> |
+<summary title="press the arrow to show|hide map & layer features"> |
       
       <div id="mapSelectContainer" class="tilemaps_selector">
             <select name="mapsData" id="mapsDataSel"></select>
