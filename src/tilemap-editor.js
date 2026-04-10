@@ -131,7 +131,7 @@
 
             <div class="tileset_opt_field">
                 <label>Clear map:</label>
-                <button id="clearCanvasBtn" title="clear map"><b>⊞ 🗑️</b></button>
+                <button style="border: none; background-color: inherit" id="clearCanvasBtn" title="clear map">🪟 🗑️</button>
                 <span> &hairsp; &hairsp;  &hairsp; &hairsp; Grid Size:</span>
                 <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
                 <label> &hairsp; &hairsp;  &hairsp; &hairsp; Options:</label>
