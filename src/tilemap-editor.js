@@ -103,7 +103,7 @@
         </div>
         
         <div>
-            <div id="toolButtonsWrapper" class="tool_wrapper">             
+            <div id="toolButtonsWrapper" class="tool_wrapper"> <text>Tools | </text>
               <input id="tool0" type="radio" value="0" name="tool" checked class="hidden"/>
               <label for="tool0" title="paint tiles" data-value="0" class="menu">
                   <div style="text-decoration: underline; text-underline-offset: 7px;" id="flipBrushIndicator">✏️</div>
@@ -153,7 +153,7 @@
 
       </div>
       <div class="card_body">
-        <div class="card_left_column">
+        <div class="card_left_column" style="margin-right: 10px;">
         
         <details style="display: none; visibility: hidden;" class="details_container sticky_left" id="tilesetDataDetails" open="true">
           <summary >
