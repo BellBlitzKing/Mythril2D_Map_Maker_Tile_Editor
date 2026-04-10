@@ -130,7 +130,7 @@
   flex: 3;
   overflow: auto;
   padding-right: 16px;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 }
 .card_right-column.layers {
   flex: 1;
