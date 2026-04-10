@@ -119,7 +119,7 @@
               <input id="tool1" type="radio" value="1" name="tool" class="hidden"/>
               <label style="text-decoration: underline; text-underline-offset: 7px;" for="tool1" title="erase tiles" data-value="1">🗑️</label>
               <input id="tool2" type="radio" value="2" name="tool" class="hidden"/> 
-              <label style="text-decoration: underline; text-underline-offset: 7px;" for="tool2" title="pan" data-value="2"> ◀️🗺️▶️ </label>
+              <label style="text-decoration: underline; text-underline-offset: 7px;" for="tool2" title="pan" data-value="2"> ◀🌐▶ </label>
               <input id="tool3" type="radio" value="3" name="tool" class="hidden"/> 
               <label style="text-decoration: underline; text-underline-offset: 7px;" for="tool3" title="pick tile" data-value="3"> 🎨👆 </label>
               <input id="tool4" type="radio" value="4" name="tool" class="hidden"/> 
@@ -131,7 +131,7 @@
 
             <div class="tileset_opt_field">
                 <label>Clear map:</label>
-                <button style="text-decoration: underline; text-underline-offset: 7px; border: none; background-color: inherit" id="clearCanvasBtn" title="clear map">🪟 🗑️</button>
+                <button style="text-decoration: underline; text-underline-offset: 7px; border: none; background-color: inherit" id="clearCanvasBtn" title="clear map">🌐 🗑️</button>
                 <span> &hairsp; &hairsp;  &hairsp; &hairsp; Grid Size:</span>
                 <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
                 <label> &hairsp; &hairsp;  &hairsp; &hairsp; Options:</label>
