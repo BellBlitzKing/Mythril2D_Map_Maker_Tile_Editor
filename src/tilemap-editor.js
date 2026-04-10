@@ -296,7 +296,7 @@
 </summary>
 
         <label class="sticky add_layer">
-            <small><label id="activeLayerLabel" class="menu">✏️ Edit Layer</label></small>
+            <small><label id="activeLayerLabel" class="menu">✏️Edit layer</label></small>
             <button id="addLayerBtn" title="Add layer">+</button>
         </label>
         <div class="layers" id="layers">
@@ -387,7 +387,7 @@
 
         document.querySelector(`.layer[tile-layer="${newLayer}"]`)?.classList.add('active');
         document.getElementById("activeLayerLabel").innerHTML = `
-            ✏️ Edit Layer: ${maps[ACTIVE_MAP].layers[newLayer]?.name} 
+            ✏️Edit layer: ${maps[ACTIVE_MAP].layers[newLayer]?.name} 
             <div class="dropdown left">
                 <div class="item nohover">Layer: ${maps[ACTIVE_MAP].layers[newLayer]?.name} </div>
                 <div class="item">
