@@ -77,7 +77,7 @@
         <a id="downloadAnchorElem" style="display:none"></a>
        <div class="tileset_opt_field header">
        <div class="menu file">
-            <span> File 💾 </span>
+            <span>File Save 💾</span>
             <div class="dropdown" id="fileMenuDropDown">                            
                 <a style="display: none; visibility: hidden;" class="button item button-as-link" href="#popup2">About</a>
                 <div id="popup2" class="overlay">
