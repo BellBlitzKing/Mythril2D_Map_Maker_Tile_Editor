@@ -530,10 +530,12 @@ a:visited {
   color: white;
 }
 a:hover {
-  color: hotpink;
+  /* color: hotpink; */
+  color: white;
 }
 a:active {
-  color: #ffae00;
+  /* color: #ffae00; */
+  color: white;
 }
 
 .two-digit-width{
