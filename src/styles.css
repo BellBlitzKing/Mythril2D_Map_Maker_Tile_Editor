@@ -522,10 +522,12 @@ input[name='tool']:checked+label{
 }
 
 a:link {
-  color: #ffc300;
+  /* color: #ffc300; */
+  color: white;
 }
 a:visited {
-  color: #98ff98;
+  /* color: #98ff98; */
+  color: white;
 }
 a:hover {
   color: hotpink;
