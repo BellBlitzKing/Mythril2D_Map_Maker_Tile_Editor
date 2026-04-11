@@ -103,10 +103,10 @@
         </div>
         
         <div>
-            <div id="toolButtonsWrapper" class="tool_wrapper"> <label title="Use tools to the right to build your map"><small>Tools:</small></label>
+            <div id="toolButtonsWrapper" class="tool_wrapper"> <label style="color: gold !important;" title="Use tools to the right to build your map"><small>Tools:</small></label>
               <input id="tool0" type="radio" value="0" name="tool" checked class="hidden"/>
               <label for="tool0" title="paint tiles" data-value="0" class="menu">
-                  <div style="text-decoration-color: yellow !important; text-decoration: underline; text-underline-offset: 7px;" id="flipBrushIndicator">✏️</div>
+                  <div style="text-decoration-color: gold !important; text-decoration: underline; text-underline-offset: 7px;" id="flipBrushIndicator">✏️</div>
                   <div class="dropdown">
                     <div class="item nohover">Pencil draw tool options</div>
                     <div class="item">
@@ -119,7 +119,7 @@
               <input id="tool1" type="radio" value="1" name="tool" class="hidden"/>
               <label style="text-decoration-color: lightsteelblue !important; text-decoration: underline; text-underline-offset: 7px;" for="tool1" title="erase tiles" data-value="1">🗑️</label>
               <input id="tool2" type="radio" value="2" name="tool" class="hidden"/> 
-              <label style="text-decoration-color: darkturquoise !important; text-decoration: underline; text-underline-offset: 7px;" for="tool2" title="pan" data-value="2"> ◀🌐▶ </label>
+              <label style="text-decoration-color: lightskyblue !important; text-decoration: underline; text-underline-offset: 7px;" for="tool2" title="pan" data-value="2"> ◀🌐▶ </label>
               <input id="tool3" type="radio" value="3" name="tool" class="hidden"/> 
               <label style="text-decoration-color: mistyrose !important; text-decoration: underline; text-underline-offset: 7px;" for="tool3" title="pick tile" data-value="3"> 🎨👆 </label>
               <input id="tool4" type="radio" value="4" name="tool" class="hidden"/> 
@@ -172,7 +172,7 @@
         </details>
 
             <div class="select_container layer sticky_top sticky_left"  id="mapSelectContainer" style="margin-bottom: 5px">
-            <small title="Pick Tilesets from the dropdown list">Tiles ☰</small><select style="margin-left: 3px;" name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
+            <small style="color: gold !important;" title="Pick Tilesets from the dropdown list">Tiles ☰</small><select style="margin-left: 3px;" name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
             <button id="replaceTilesetBtn" title="replace tileset">r</button>
             <input id="tilesetReplaceInput" type="file" style="display: none" />
             <button id="addTilesetBtn" title="add tileset">+</button>
@@ -265,7 +265,7 @@
         </div>
       <details style="margin-right: 20px; margin-top: 10px;" class="card_right-column layers" open>
 
-<summary title="press the arrow to show / hide map & layer features"> |
+<summary style="color: gold !important;" title="press the arrow to show / hide map & layer features"> |
       
       <div id="mapSelectContainer" class="tilemaps_selector">
             <select style="font-size: small !important" name="mapsData" id="mapsDataSel"></select>
