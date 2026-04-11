@@ -172,7 +172,7 @@
         </details>
 
             <div class="select_container layer sticky_top sticky_left"  id="mapSelectContainer" style="margin-bottom: 5px">
-            <small>Pick👉</small><select style="margin-left: 5px;" name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
+            <small>Tiles ☰</small><select style="margin-left: 5px;" name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
             <button id="replaceTilesetBtn" title="replace tileset">r</button>
             <input id="tilesetReplaceInput" type="file" style="display: none" />
             <button id="addTilesetBtn" title="add tileset">+</button>
