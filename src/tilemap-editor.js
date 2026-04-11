@@ -268,7 +268,7 @@
 <summary title="press the arrow to show / hide map & layer features"> |
       
       <div id="mapSelectContainer" class="tilemaps_selector">
-            <small><select name="mapsData" id="mapsDataSel"></select></small>
+            <select name="mapsData" id="mapsDataSel"><small></small></select>
             <button id="addMapBtn" title="Add tilemap">+</button>
             <button id="removeMapBtn" title="Remove tilemap">-</button>        
             <button id="duplicateMapBtn" title="Clone Copy map"><b>⧉</b></button>     
