@@ -106,7 +106,7 @@
             <div id="toolButtonsWrapper" class="tool_wrapper"> <label title="Use tools to the right to build your map"><small>Tools:</small></label>
               <input id="tool0" type="radio" value="0" name="tool" checked class="hidden"/>
               <label for="tool0" title="paint tiles" data-value="0" class="menu">
-                  <div style="text-decoration-color: orange !important; text-decoration: underline; text-underline-offset: 7px;" id="flipBrushIndicator">✏️</div>
+                  <div style="text-decoration-color: yellow !important; text-decoration: underline; text-underline-offset: 7px;" id="flipBrushIndicator">✏️</div>
                   <div class="dropdown">
                     <div class="item nohover">Pencil draw tool options</div>
                     <div class="item">
@@ -117,11 +117,11 @@
                   </div>
               </label>
               <input id="tool1" type="radio" value="1" name="tool" class="hidden"/>
-              <label style="text-decoration-color: ghostwhite !important; text-decoration: underline; text-underline-offset: 7px;" for="tool1" title="erase tiles" data-value="1">🗑️</label>
+              <label style="text-decoration-color: lightsteelblue !important; text-decoration: underline; text-underline-offset: 7px;" for="tool1" title="erase tiles" data-value="1">🗑️</label>
               <input id="tool2" type="radio" value="2" name="tool" class="hidden"/> 
-              <label style="text-decoration-color: cyan !important; text-decoration: underline; text-underline-offset: 7px;" for="tool2" title="pan" data-value="2"> ◀🌐▶ </label>
+              <label style="text-decoration-color: darkturquoise !important; text-decoration: underline; text-underline-offset: 7px;" for="tool2" title="pan" data-value="2"> ◀🌐▶ </label>
               <input id="tool3" type="radio" value="3" name="tool" class="hidden"/> 
-              <label style="text-decoration-color: yellow !important; text-decoration: underline; text-underline-offset: 7px;" for="tool3" title="pick tile" data-value="3"> 🎨👆 </label>
+              <label style="text-decoration-color: mistyrose !important; text-decoration: underline; text-underline-offset: 7px;" for="tool3" title="pick tile" data-value="3"> 🎨👆 </label>
               <input id="tool4" type="radio" value="4" name="tool" class="hidden"/> 
               <label style="text-decoration-color: palegreen !important; text-decoration: underline; text-underline-offset: 7px;" for="tool4" title="random from selected" data-value="4"> 🎲📚 </label>
                <input id="tool5" type="radio" value="5" name="tool" class="hidden"/> 
