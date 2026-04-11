@@ -456,7 +456,7 @@
                     return;
                 }
 
-                const draggedItem = e.currentTarget;
+                /* const draggedItem = e.currentTarget; */
                 const draggedItem = layerEl;
                 draggedItem.classList.add('dragging');
 
@@ -506,7 +506,7 @@
                 document.addEventListener('pointerup', onPointerUp);
             };
 
-            layerEl.addEventListener('pointerdown', onPointerDown);
+            /* layerEl.addEventListener('pointerdown', onPointerDown); */
             handleEl.addEventListener('pointerdown', onPointerDown);
 
             
