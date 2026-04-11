@@ -117,15 +117,15 @@
                   </div>
               </label>
               <input id="tool1" type="radio" value="1" name="tool" class="hidden"/>
-              <label style="text-decoration: underline; text-underline-offset: 7px;" for="tool1" title="erase tiles" data-value="1">🗑️</label>
+              <label style="text-decoration-color: ghostwhite !important; text-decoration: underline; text-underline-offset: 7px;" for="tool1" title="erase tiles" data-value="1">🗑️</label>
               <input id="tool2" type="radio" value="2" name="tool" class="hidden"/> 
               <label style="text-decoration-color: cyan !important; text-decoration: underline; text-underline-offset: 7px;" for="tool2" title="pan" data-value="2"> ◀🌐▶ </label>
               <input id="tool3" type="radio" value="3" name="tool" class="hidden"/> 
               <label style="text-decoration-color: yellow !important; text-decoration: underline; text-underline-offset: 7px;" for="tool3" title="pick tile" data-value="3"> 🎨👆 </label>
               <input id="tool4" type="radio" value="4" name="tool" class="hidden"/> 
-              <label style="text-decoration-color: green !important; text-decoration: underline; text-underline-offset: 7px;" for="tool4" title="random from selected" data-value="4"> 🎲📚 </label>
+              <label style="text-decoration-color: palegreen !important; text-decoration: underline; text-underline-offset: 7px;" for="tool4" title="random from selected" data-value="4"> 🎲📚 </label>
                <input id="tool5" type="radio" value="5" name="tool" class="hidden"/> 
-              <label style="text-decoration-color: blue !important; text-decoration: underline; text-underline-offset: 7px;" for="tool5" title="fill on layer" data-value="5"> 🪣🧱 </label>
+              <label style="text-decoration-color: deepskyblue !important; text-decoration: underline; text-underline-offset: 7px;" for="tool5" title="fill on layer" data-value="5"> 🪣🧱 </label>
             </div>
         </div>
 
