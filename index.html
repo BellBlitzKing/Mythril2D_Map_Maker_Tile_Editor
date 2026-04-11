@@ -368,9 +368,13 @@
         tileSize = parseInt(tileSizeParam, 10)
       }
     } else {
-      initTilemapEditor()
+      fetch("ioJsonData.json").then(r => r.json()).then(data => {
+        tileMapData = data;
+        initTilemapEditor();
+      }).catch(() => initTilemapEditor())
     }
     // Pwa stuff
+    /*
     let newWorker;
     function showUpdateBar() {
       let snackbar = document.getElementById('snackbar');
@@ -431,7 +435,8 @@
       deferredPrompt = null;
       console.log('PWA was installed');
     });
-
+*/
+    
   </script>
 
   <style>
