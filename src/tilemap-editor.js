@@ -172,7 +172,7 @@
         </details>
 
             <div class="select_container layer sticky_top sticky_left"  id="mapSelectContainer" style="margin-bottom: 5px">
-            <small>Tiles ☰</small><select style="margin-left: 5px;" name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
+            <small title="Pick Tilesets from the dropdown list">Tiles ☰</small><select style="margin-left: 3px;" name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
             <button id="replaceTilesetBtn" title="replace tileset">r</button>
             <input id="tilesetReplaceInput" type="file" style="display: none" />
             <button id="addTilesetBtn" title="add tileset">+</button>
@@ -438,7 +438,7 @@
         layersElement.innerHTML = maps[ACTIVE_MAP].layers.map((layer, index)=>{
             return `
               <div class="layer" data-layer-index="${index}">
-                <div class="layer-handle" handle-layer="${index}" draggable="false">↕️</div>
+                <small><div class="layer-handle" handle-layer="${index}" draggable="false">↕️</div></small>
                 <div id="selectLayerBtn-${index}" class="layer select_layer" tile-layer="${index}" title="${layer.name}" draggable="false">${layer.name} ${layer.opacity < 1 ? ` (${layer.opacity})` : ""}</div>
                 <span id="setLayerVisBtn-${index}" vis-layer="${index}" draggable="false"></span>
                 <span id="lockLayerBtn-${index}" lock-layer="${index}" draggable="false"></span>
