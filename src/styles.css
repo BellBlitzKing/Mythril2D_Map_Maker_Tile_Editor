@@ -303,6 +303,12 @@ cursor: pointer;
   padding: 0 3px;
   border-bottom: 1px solid #80808045;
 }
+.layer-handle {
+  cursor: grab;
+}
+.layer-handle:active {
+  cursor: grabbing;
+}
 .tileset_info{
   margin-left: 3px;
   color: #ececcd;
