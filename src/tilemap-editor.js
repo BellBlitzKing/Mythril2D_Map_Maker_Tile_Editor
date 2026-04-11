@@ -438,7 +438,7 @@
         layersElement.innerHTML = maps[ACTIVE_MAP].layers.map((layer, index)=>{
             return `
               <div class="layer" data-layer-index="${index}">
-                <div class="layer-handle" handle-layer="${index}" draggable="false">☰</div>
+                <div class="layer-handle" handle-layer="${index}" draggable="false">↕️</div>
                 <div id="selectLayerBtn-${index}" class="layer select_layer" tile-layer="${index}" title="${layer.name}" draggable="false">${layer.name} ${layer.opacity < 1 ? ` (${layer.opacity})` : ""}</div>
                 <span id="setLayerVisBtn-${index}" vis-layer="${index}" draggable="false"></span>
                 <span id="lockLayerBtn-${index}" lock-layer="${index}" draggable="false"></span>
