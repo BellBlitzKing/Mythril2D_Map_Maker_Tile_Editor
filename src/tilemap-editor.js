@@ -131,11 +131,11 @@
 
             <div class="tileset_opt_field">
                 <label>Clear:</label>
-                <button style="cursor: pointer; text-decoration: underline; text-underline-offset: 7px; border: none; background-color: inherit" id="clearCanvasBtn" title="clear map">🌐🗑️</button>
+                <button style="cursor: pointer; text-decoration: none; border: none; background-color: inherit" id="clearCanvasBtn" title="clear map">🌐🗑️</button>
                 <span>Grid:  </span>
                 <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
                 <label> &hairsp; &hairsp;  Settings:</label>
-                <a style="text-underline-offset: 7px;" class="button" href="#popup1">⚙️</a>
+                <a style="text-decoration: none;" class="button" href="#popup1">⚙️</a>
 
             </div>
 
