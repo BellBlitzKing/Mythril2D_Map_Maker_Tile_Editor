@@ -26,6 +26,8 @@
             // element.style.position = "relative"
             if(!limitX) element.style.left = elementX + deltaX + 'px';
             if(!limitY) element.style.top = elementY + deltaY + 'px';
+            if(!limitX) element.style.cursor = 'grab';
+            if(!limitY) element.style.cursor = 'grab';
             console.log("DRAGGING", {deltaX, deltaY, x: elementX + deltaX, y:elementY + deltaY})
             if(onDrag) onDrag({deltaX, deltaY, x: elementX + deltaX, y:elementY + deltaY, mouseX, mouseY});
         }
@@ -40,6 +42,7 @@
         const onMouseUp = () => {
             if(!element.getAttribute("isDraggable") === "false") return;
             isMouseDown = false;
+            element.style.cursor = 'pointer';
             elementX = parseInt(element.style.left) || 0;
             elementY = parseInt(element.style.top) || 0;
             if(onRelease) onRelease({x:elementX,y:elementY})
@@ -252,7 +255,7 @@
       </div>
         </div>
         <div class="card_right-column" style="position:relative" id="canvas_drag_area">
-        <div class="canvas_wrapper" id="canvas_wrapper">
+        <div style="cursor: pointer;" class="canvas_wrapper" id="canvas_wrapper">
           <canvas id="mapCanvas" width="${width}" height="${height}"></canvas>
           <div class="canvas_resizer" resizerdir="y"><input value="1" type="number" min="1" resizerdir="y"><small><span>   ⬆ y ⬇</span></small>
           <small><br><br><label for="tool2" title="pan around map" data-value="2">◀🌐▶</label></small>
