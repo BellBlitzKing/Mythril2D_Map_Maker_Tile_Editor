@@ -26,8 +26,8 @@
             // element.style.position = "relative"
             if(!limitX) element.style.left = elementX + deltaX + 'px';
             if(!limitY) element.style.top = elementY + deltaY + 'px';
-            if(!limitX) element.style.cursor = 'grab';
-            if(!limitY) element.style.cursor = 'grab';
+            if(!limitX) element.style.cursor = 'grabbing';
+            if(!limitY) element.style.cursor = 'grabbing';
             console.log("DRAGGING", {deltaX, deltaY, x: elementX + deltaX, y:elementY + deltaY})
             if(onDrag) onDrag({deltaX, deltaY, x: elementX + deltaX, y:elementY + deltaY, mouseX, mouseY});
         }
@@ -42,7 +42,7 @@
         const onMouseUp = () => {
             if(!element.getAttribute("isDraggable") === "false") return;
             isMouseDown = false;
-            element.style.cursor = 'pointer';
+            element.style.cursor = 'default';
             elementX = parseInt(element.style.left) || 0;
             elementY = parseInt(element.style.top) || 0;
             if(onRelease) onRelease({x:elementX,y:elementY})
@@ -109,7 +109,7 @@
             <div id="toolButtonsWrapper" class="tool_wrapper"> <label style="color: gold !important;" title="Use tools to the right to build your map"><small>Tools:</small></label>
               <input id="tool0" type="radio" value="0" name="tool" checked class="hidden"/>
               <label for="tool0" title="paint tiles" data-value="0" class="menu">
-                  <div style="cursor: pointer; text-decoration-color: gold !important; text-decoration: underline; text-underline-offset: 7px;" id="flipBrushIndicator">✏️</div>
+                  <div style="text-decoration-color: gold !important; text-decoration: underline; text-underline-offset: 7px;" id="flipBrushIndicator">✏️</div>
                   <div class="dropdown">
                     <div class="item nohover">Pencil draw tool options</div>
                     <div class="item">
@@ -120,31 +120,31 @@
                   </div>
               </label>
               <input id="tool1" type="radio" value="1" name="tool" class="hidden"/>
-              <label style="cursor: pointer; text-decoration-color: red !important; text-decoration: underline; text-underline-offset: 7px;" for="tool1" title="erase tiles" data-value="1">❌</label>
+              <label style="text-decoration-color: red !important; text-decoration: underline; text-underline-offset: 7px;" for="tool1" title="erase tiles" data-value="1">❌</label>
               <input id="tool2" type="radio" value="2" name="tool" class="hidden"/> 
-              <label style="cursor: pointer; text-decoration-color: lightskyblue !important; text-decoration: underline; text-underline-offset: 7px;" for="tool2" title="pan" data-value="2"> ◀🌐▶ </label>
+              <label style="text-decoration-color: lightskyblue !important; text-decoration: underline; text-underline-offset: 7px;" for="tool2" title="pan" data-value="2"> ◀🌐▶ </label>
               <input id="tool3" type="radio" value="3" name="tool" class="hidden"/> 
-              <label style="cursor: pointer; text-decoration-color: mistyrose !important; text-decoration: underline; text-underline-offset: 7px;" for="tool3" title="pick tile" data-value="3"> 🎨👆 </label>
+              <label style="text-decoration-color: mistyrose !important; text-decoration: underline; text-underline-offset: 7px;" for="tool3" title="pick tile" data-value="3"> 🎨👆 </label>
               <input id="tool4" type="radio" value="4" name="tool" class="hidden"/> 
-              <label style="cursor: pointer; text-decoration-color: palegreen !important; text-decoration: underline; text-underline-offset: 7px;" for="tool4" title="random from selected" data-value="4"> 🎲📚 </label>
+              <label style="text-decoration-color: palegreen !important; text-decoration: underline; text-underline-offset: 7px;" for="tool4" title="random from selected" data-value="4"> 🎲📚 </label>
                <input id="tool5" type="radio" value="5" name="tool" class="hidden"/> 
-              <label style="cursor: pointer; text-decoration-color: deepskyblue !important; text-decoration: underline; text-underline-offset: 7px;" for="tool5" title="fill on layer" data-value="5"> 🪣🧱 </label>
-              <button style="cursor: pointer; text-decoration-color: lightsteelblue !important; text-decoration: underline; text-underline-offset: 7px; border: none; background-color: inherit; margin: 0px; padding: 0px;" id="clearCanvasBtn" title="clear map">🗑️</button>
+              <label style="text-decoration-color: deepskyblue !important; text-decoration: underline; text-underline-offset: 7px;" for="tool5" title="fill on layer" data-value="5"> 🪣🧱 </label>
+              <button style="text-decoration-color: lightsteelblue !important; text-decoration: underline; text-underline-offset: 7px; border: none; background-color: inherit; margin: 0px; padding: 0px;" id="clearCanvasBtn" title="clear map">🗑️</button>
             </div>
         </div>
 
             <div class="tileset_opt_field">
                 <span>Grid:  </span>
                 <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
-                <a style="text-decoration: none;" class="button" href="#popup1">⚙️</a>
+                <a style="cursor: help; text-decoration: none;" class="button" href="#popup1">⚙️</a>
 
             </div>
 
         <div class="tool_wrapper">
             <label id="undoBtn" title="Undo"><small>undo </small>↩️️</label>
             <label id="redoBtn" title="Redo"><small>redo </small>🔁️</label>
-            <label id="zoomIn" title="Zoom in">🔎️+</label>
-            <label id="zoomOut" title="Zoom out">🔎️-</label>
+            <label style="cursor: zoom-in;" id="zoomIn" title="Zoom in">🔎️+</label>
+            <label style="cursor: zoom-out;" id="zoomOut" title="Zoom out">🔎️-</label>
             <label id="zoomLabel">️</label>
         </div>
             
@@ -255,7 +255,7 @@
       </div>
         </div>
         <div class="card_right-column" style="position:relative" id="canvas_drag_area">
-        <div style="cursor: pointer;" class="canvas_wrapper" id="canvas_wrapper">
+        <div style="cursor: default;" class="canvas_wrapper" id="canvas_wrapper">
           <canvas id="mapCanvas" width="${width}" height="${height}"></canvas>
           <div class="canvas_resizer" resizerdir="y"><input value="1" type="number" min="1" resizerdir="y"><small><span>   ⬆ y ⬇</span></small>
           <small><br><br><label for="tool2" title="pan around map" data-value="2">◀🌐▶</label></small>
