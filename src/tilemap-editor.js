@@ -113,7 +113,7 @@
                   <div class="dropdown">
                     <div class="item nohover">Pencil draw tool options</div>
                     <div class="item">
-                        <label for="toggleFlipX" class="">Flip tile on x</label>
+                        <label for="toggleFlipX" class="">Flip tile 🔄 | reverse direction ↳↰ (x)</label>
                         <input type="checkbox" id="toggleFlipX" style="display: none"> 
                         <label class="toggleFlipX"></label>
                     </div>
@@ -142,7 +142,7 @@
 
         <div class="tool_wrapper">
             <label id="undoBtn" title="Undo"><small>undo </small>↩️️</label>
-            <label id="redoBtn" title="Redo"><small>redo </small>🔁️</label>
+            <label id="redoBtn" title="Redo"><small>redo </small>🔃</label>
             <label style="cursor: zoom-in;" id="zoomIn" title="Zoom in">🔎️+</label>
             <label style="cursor: zoom-out;" id="zoomOut" title="Zoom out">🔎️-</label>
             <label id="zoomLabel">️</label>
@@ -790,7 +790,7 @@
                     );
                     if(shouldDrawGrid && !shouldHideHud) {
                         ctx.fillStyle = 'white';
-                        ctx.fillText("⭕",positionX * SIZE_OF_CROP * ZOOM + 5,positionY * SIZE_OF_CROP * ZOOM + 10);
+                        ctx.fillText("🔄",positionX * SIZE_OF_CROP * ZOOM + 5,positionY * SIZE_OF_CROP * ZOOM + 10);
                     }
                 }
             })
