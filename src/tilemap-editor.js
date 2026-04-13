@@ -173,8 +173,8 @@
         </details>
 
             <div class="select_container layer sticky_top sticky_left"  id="mapSelectContainer" style="margin-bottom: 5px">
-            <small style="font-size: medium; cursor: default; color: gold !important;" title="Pick Tilesets from the dropdown list">Tiles: </small><select style="cursor: pointer; margin-left: 3px;" name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
-            <button style="cursor: default;" id="replaceTilesetBtn" title="replace tileset">r</button>
+            <small style="cursor: default; color: gold !important;" title="Pick Tilesets from the dropdown list">Tiles: </small><select style="cursor: pointer; margin-left: 3px;" name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
+            <button style="cursor: default;" id="replaceTilesetBtn" title="replace tileset">⇄</button>
             <input id="tilesetReplaceInput" type="file" style="display: none" />
             <button style="cursor: default;" id="addTilesetBtn" title="add tileset">✚</button>
             <input id="tilesetReadInput" type="file" style="display: none" />
@@ -298,7 +298,7 @@
 
         <label class="sticky add_layer">
             <small><label id="activeLayerLabel" class="menu">𖤣 Edit layer</label></small>
-            <button id="addLayerBtn" title="Add layer">+</button>
+            <button title="add new layer" id="addLayerBtn" title="Add layer">✚</button>
         </label>
         <div class="layers" id="layers">
       </div>
