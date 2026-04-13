@@ -113,7 +113,7 @@
                   <div class="dropdown">
                     <div class="item nohover">Pencil draw tool options</div>
                     <div class="item">
-                        <label for="toggleFlipX" class="">Flip tile 🔄 | reverse direction ↳↰ (x)</label>
+                        <label for="toggleFlipX" class="">Flip tile 🔄 | reverse ↳↰</label>
                         <input type="checkbox" id="toggleFlipX" style="display: none"> 
                         <label class="toggleFlipX"></label>
                     </div>
