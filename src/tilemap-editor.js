@@ -174,11 +174,11 @@
 
             <div class="select_container layer sticky_top sticky_left"  id="mapSelectContainer" style="margin-bottom: 5px">
             <small style="cursor: default; color: gold !important;" title="Pick Tilesets from the dropdown list">Tiles: </small><select style="cursor: pointer; margin-left: 3px;" name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
-            <button style="cursor: default;" id="replaceTilesetBtn" title="replace tileset">⇄</button>
-            <input id="tilesetReplaceInput" type="file" style="display: none" />
             <button style="cursor: default;" id="addTilesetBtn" title="add tileset">✚</button>
             <input id="tilesetReadInput" type="file" style="display: none" />
             <button style="cursor: default;" id="removeTilesetBtn" title="remove">🗑️</button>
+            <button style="cursor: default;" id="replaceTilesetBtn" title="replace tileset">⇄</button>
+            <input id="tilesetReplaceInput" type="file" style="display: none" />
             </div>
         
         <div style="display: none; visibility: hidden;" class="select_container layer sticky_top sticky_left" id="tilesetSelectContainer">
