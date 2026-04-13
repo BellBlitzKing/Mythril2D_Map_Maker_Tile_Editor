@@ -176,9 +176,9 @@
             <small style="font-size: medium; cursor: default; color: gold !important;" title="Pick Tilesets from the dropdown list">Tiles: </small><select style="cursor: pointer; margin-left: 3px;" name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
             <button style="cursor: default;" id="replaceTilesetBtn" title="replace tileset">r</button>
             <input id="tilesetReplaceInput" type="file" style="display: none" />
-            <button style="cursor: default;" id="addTilesetBtn" title="add tileset">+</button>
+            <button style="cursor: default;" id="addTilesetBtn" title="add tileset">✚</button>
             <input id="tilesetReadInput" type="file" style="display: none" />
-            <button style="cursor: default;" id="removeTilesetBtn" title="remove">-</button>
+            <button style="cursor: default;" id="removeTilesetBtn" title="remove">🗑️</button>
             </div>
         
         <div style="display: none; visibility: hidden;" class="select_container layer sticky_top sticky_left" id="tilesetSelectContainer">
@@ -270,8 +270,8 @@
       
       <div id="mapSelectContainer" class="tilemaps_selector">
             <select style="font-size: small !important" name="mapsData" id="mapsDataSel"></select>
-            <button id="addMapBtn" title="Add tilemap">+</button>
-            <button id="removeMapBtn" title="Remove tilemap">-</button>        
+            <button id="addMapBtn" title="Add tilemap">✚</button>
+            <button id="removeMapBtn" title="Remove tilemap">🗑️</button>        
             <button id="duplicateMapBtn" title="Clone Copy map"><b>⧉</b></button>     
             
             <div id="popup1" class="overlay">
