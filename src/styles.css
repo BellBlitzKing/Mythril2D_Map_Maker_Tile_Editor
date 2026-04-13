@@ -492,10 +492,10 @@ cursor: pointer;
 }
 
 .toggleFlipX::after {
-  content: "⛔📴";
+  content: "⛔";
 }
 #toggleFlipX:checked ~ .toggleFlipX::after {
-  content: "🟢🖍️";
+  content: "🟢";
 }
 
 
