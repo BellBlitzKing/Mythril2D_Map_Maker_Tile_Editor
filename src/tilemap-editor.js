@@ -177,7 +177,7 @@
             <button style="cursor: default;" id="addTilesetBtn" title="add tileset">✚</button>
             <input id="tilesetReadInput" type="file" style="display: none" />
             <button style="cursor: default;" id="removeTilesetBtn" title="remove">🗑️</button>
-            <button style="cursor: default;" id="replaceTilesetBtn" title="replace tileset">⇄</button>
+            <button style="font-size: 15px; cursor: default;" id="replaceTilesetBtn" title="replace tileset"><b>⇄</b></button>
             <input id="tilesetReplaceInput" type="file" style="display: none" />
             </div>
         
@@ -415,7 +415,7 @@
         maps[ACTIVE_MAP].layers[layerNumber].visible = override ?? !maps[ACTIVE_MAP].layers[layerNumber].visible;
         document
             .getElementById(`setLayerVisBtn-${layer}`)
-            .innerHTML = maps[ACTIVE_MAP].layers[layerNumber].visible ? "👁️": "👓";
+            .innerHTML = maps[ACTIVE_MAP].layers[layerNumber].visible ? "👁️": "🔘";
         draw();
     }
 
@@ -1285,7 +1285,7 @@
 
     const toggleSymbolsVisible = (override=null) => {
         if(override === null) DISPLAY_SYMBOLS = !DISPLAY_SYMBOLS;
-        document.getElementById("setSymbolsVisBtn").innerHTML = DISPLAY_SYMBOLS ? "👁️": "👓";
+        document.getElementById("setSymbolsVisBtn").innerHTML = DISPLAY_SYMBOLS ? "👁️": "🔘";
         updateTilesetGridContainer();
     }
 
