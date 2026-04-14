@@ -306,6 +306,7 @@
         </label>
         <div style="font-size: small;" class="layers" id="layers">
       </div>
+             <small><label id="activeLayerOpacity"></label></small>
       </details>
       </div>
     </div>
@@ -392,7 +393,22 @@
 
         document.querySelector(`.layer[tile-layer="${newLayer}"]`)?.classList.add('active');
 
-        /*Opacity drop-down menu */
+        /*Opacity Alt drop-down menu 2026 change split menu */
+        document.getElementById("activeLayerOpacity").innerHTML = `
+            Edit layer: ${maps[ACTIVE_MAP].layers[newLayer]?.name} 
+            <div class="dropdown left">
+                <div style="display: none; visibility: hidden;" class="item nohover">Layer: ${maps[ACTIVE_MAP].layers[newLayer]?.name} </div>
+                <div title="slider-wrapper" class="item">
+                    <div style="display: none; visibility: hidden;" class="slider-wrapper">
+                      <label for="layerOpacitySlider">Opacity</label>
+                      <input type="range" min="0" max="1" value="1" id="layerOpacitySlider" step="0.01">
+                      <output for="layerOpacitySlider" id="layerOpacitySliderValue">${maps[ACTIVE_MAP].layers[newLayer]?.opacity}</output>
+                    </div>
+                </div>
+            </div>
+        `; 
+
+        /*Opacity vis drop-down menu */
         document.getElementById("activeLayerLabel").innerHTML = `
             Edit layer: ${maps[ACTIVE_MAP].layers[newLayer]?.name} 
             <div style="display: none; visibility: hidden;" class="dropdown left">
