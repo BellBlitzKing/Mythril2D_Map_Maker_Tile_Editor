@@ -301,10 +301,10 @@
 </div>
 
         <label class="sticky add_layer">
-            <small><label id="activeLayerLabel" class="menu">𖤣 Edit layer</label></small>
+            <small><label id="activeLayerLabel" class="menu">Edit layer</label></small>
             <button style="cursor: cell;" id="addLayerBtn" title="Add new layer">✚</button>
         </label>
-        <div class="layers" id="layers">
+        <div style="font-size: small;" class="layers" id="layers">
       </div>
       </details>
       </div>
