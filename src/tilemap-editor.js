@@ -263,12 +263,12 @@
           </div>
         </div>
         </div>
-      <details style="margin-right: 20px; margin-top: 10px;" class="card_right-column layers" open>
+      <details style="margin-right: 20px; margin-top: 5px;" class="card_right-column layers" open>
 
 <summary title="Press the Arrow ▶ to show / hide map & layer features" style="color: gold !important;"><text title="Press the Arrow ▶ to show / hide map & layer features">|</text>
       
       <div id="mapSelectContainer" class="tilemaps_selector">
-            <select title="Pick a Map from the list" style="font-size: small !important" name="mapsData" id="mapsDataSel"></select>
+            <select title="Pick a Map from the list" name="mapsData" id="mapsDataSel"></select>
                
             <div style="display: none; visibility: hidden;" id="popup1" class="overlay">
             <div class="popup">
@@ -290,12 +290,12 @@
         
 </summary>
 
-<div style="background-color: transparent; justify-content: right;" id="mapSelectContainer" class="tilemaps_selector">
+<div style="width: 199px; background-color: transparent; justify-content: right;" id="mapSelectContainer" class="tilemaps_selector">
 
-            <button style="cursor: cell;" id="addMapBtn" title="Add New Map">✚</button>
-            <button style="cursor: cell;" id="duplicateMapBtn" title="Clone Copy this Map"><b>⧉</b></button>
-            <button id="removeMapBtn" title="⚠️ Delete this Map ⚠️">🗑️</button>     
-            <button style="font-size: medium;" id="renameMapBtn" title="Rename this Map">✎</button>
+            <button style="cursor: cell; width: 36px;" id="addMapBtn" title="Add New Map">✚</button>
+            <button style="cursor: cell; width: 36px;" id="duplicateMapBtn" title="Clone Copy this Map"><b>⧉</b></button>
+            <button style="width: 36px;" id="removeMapBtn" title="⚠️ Delete this Map ⚠️">🗑️</button>     
+            <button style="font-size: medium; width: 36px;" id="renameMapBtn" title="Rename this Map">✎</button>
             <a style="display: none; visibility: hidden; cursor: help; text-decoration: none;" title="Settings and grid options" class="button" href="#popup1">⚙️</a>
 </div>
 
