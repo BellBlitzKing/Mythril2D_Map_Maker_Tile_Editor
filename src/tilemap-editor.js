@@ -134,9 +134,9 @@
         </div>
 
             <div class="tileset_opt_field">
-                <span class="flex">  h ⬆</span><input title="How Tall / Change Height of Map" id="canvasHeightInp" value="1" type="number" min="1">
-                <span class="flex">  w ➡</span><input title="How Wide / Change Width of Map" id="canvasWidthInp" value="1" type="number" min="1">
-                <span style="cursor: default;" >  g ⊞  </span>
+                <span class="flex">h </span><input title="How Tall / Change Height of Map" id="canvasHeightInp" value="1" type="number" min="1">
+                <span class="flex">  w </span><input title="How Wide / Change Width of Map" id="canvasWidthInp" value="1" type="number" min="1">
+                <span style="cursor: default;" > grid ⊞ </span>
                 <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
             </div>
 
@@ -262,10 +262,11 @@
           <div title="How Wide / Change Width of Map" class="canvas_resizer vertical" resizerdir="x"><input value="${mapTileWidth}" type="number" min="1" resizerdir="x"><small><span>⬅ w ➡</span></small>
           </div>
         </div>
-        </div>
+    </div>
+        
       <details style="margin-right: 20px; margin-top: 5px;" class="card_right-column layers" open>
 
-<summary title="Press the Arrow ▶ to show / hide map & layer features" style="color: gold !important;"><text title="Press the Arrow ▶ to show / hide map & layer features">|</text>
+<summary title="Press the Arrow ▶ to show / hide map & layer features" style="color: gold !important; margin-top: 10px;"><text title="Press the Arrow ▶ to show / hide map & layer features">|</text>
       
       <div id="mapSelectContainer" class="tilemaps_selector">
             <select title="Pick a Map from the list" name="mapsData" id="mapsDataSel"></select>
@@ -290,12 +291,12 @@
         
 </summary>
 
-<div style="width: 199px; background-color: transparent; justify-content: right;" id="mapSelectContainer" class="tilemaps_selector">
+<div style="width: 199px; background-color: transparent; justify-content: center;" id="mapSelectContainer" class="tilemaps_selector">
 
-            <button style="cursor: cell; width: 36px;" id="addMapBtn" title="Add New Map">✚</button>
-            <button style="cursor: cell; width: 36px;" id="duplicateMapBtn" title="Clone Copy this Map"><b>⧉</b></button>
-            <button style="width: 36px;" id="removeMapBtn" title="⚠️ Delete this Map ⚠️">🗑️</button>     
-            <button style="font-size: medium; width: 36px;" id="renameMapBtn" title="Rename this Map">✎</button>
+            <button style="cursor: cell; width: 30px;" id="addMapBtn" title="Add New Map">✚</button>
+            <button style="cursor: cell; width: 30px;" id="duplicateMapBtn" title="Clone Copy this Map"><b>⧉</b></button>
+            <button style="font-size: medium; width: 30px;" id="renameMapBtn" title="Rename this Map">✎</button>
+            <button style="width: 30px;" id="removeMapBtn" title="⚠️ Delete this Map ⚠️">🗑️</button>
             <a style="display: none; visibility: hidden; cursor: help; text-decoration: none;" title="Settings and grid options" class="button" href="#popup1">⚙️</a>
 </div>
 
