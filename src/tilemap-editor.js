@@ -395,7 +395,7 @@
         /*Opacity drop-down menu */
         document.getElementById("activeLayerLabel").innerHTML = `
             Edit layer: ${maps[ACTIVE_MAP].layers[newLayer]?.name} 
-            <div display: none; visibility: hidden; class="dropdown left">
+            <div style="display: none; visibility: hidden;" class="dropdown left">
                 <div class="item nohover">Layer: ${maps[ACTIVE_MAP].layers[newLayer]?.name} </div>
                 <div display: none; visibility: hidden; title="slider-wrapper" class="item">
                     <div class="slider-wrapper">
