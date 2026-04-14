@@ -397,8 +397,8 @@
             Edit layer: ${maps[ACTIVE_MAP].layers[newLayer]?.name} 
             <div style="display: none; visibility: hidden;" class="dropdown left">
                 <div class="item nohover">Layer: ${maps[ACTIVE_MAP].layers[newLayer]?.name} </div>
-                <div display: none; visibility: hidden; title="slider-wrapper" class="item">
-                    <div class="slider-wrapper">
+                <div style="display: none; visibility: hidden;" title="slider-wrapper" class="item">
+                    <div style="display: none; visibility: hidden;" class="slider-wrapper">
                       <label for="layerOpacitySlider">Opacity</label>
                       <input type="range" min="0" max="1" value="1" id="layerOpacitySlider" step="0.01">
                       <output for="layerOpacitySlider" id="layerOpacitySliderValue">${maps[ACTIVE_MAP].layers[newLayer]?.opacity}</output>
