@@ -395,11 +395,9 @@
 
         /*Opacity Alt drop-down menu 2026 change split menu */
         document.getElementById("activeLayerOpacity").innerHTML = `
-            Edit layer: ${maps[ACTIVE_MAP].layers[newLayer]?.name} 
             <div class="dropdown left">
-                <div style="display: none; visibility: hidden;" class="item nohover">Layer: ${maps[ACTIVE_MAP].layers[newLayer]?.name} </div>
                 <div title="slider-wrapper" class="item">
-                    <div style="display: none; visibility: hidden;" class="slider-wrapper">
+                    <div class="slider-wrapper">
                       <label for="layerOpacitySlider">Opacity</label>
                       <input type="range" min="0" max="1" value="1" id="layerOpacitySlider" step="0.01">
                       <output for="layerOpacitySlider" id="layerOpacitySliderValue">${maps[ACTIVE_MAP].layers[newLayer]?.opacity}</output>
@@ -408,7 +406,12 @@
             </div>
         `; 
 
-        /*Opacity vis drop-down menu */
+        document.getElementById("activeLayerLabel").innerHTML = `
+            Edit layer: ${maps[ACTIVE_MAP].layers[newLayer]?.name} 
+
+        `; 
+        
+        /*Opacity vis drop-down menu 
         document.getElementById("activeLayerLabel").innerHTML = `
             Edit layer: ${maps[ACTIVE_MAP].layers[newLayer]?.name} 
             <div style="display: none; visibility: hidden;" class="dropdown left">
@@ -421,7 +424,7 @@
                     </div>
                 </div>
             </div>
-        `; 
+        `; */
         
         document.getElementById("layerOpacitySlider").value = maps[ACTIVE_MAP].layers[newLayer]?.opacity;
         document.getElementById("layerOpacitySlider").addEventListener("change", e =>{
