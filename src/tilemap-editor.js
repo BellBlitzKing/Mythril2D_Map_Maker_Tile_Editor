@@ -397,7 +397,7 @@
 
         document.querySelector(`.layer[tile-layer="${newLayer}"]`)?.classList.add('active');
         document.getElementById("activeLayerLabel").innerHTML = `
-            𖤣 Edit layer: ${maps[ACTIVE_MAP].layers[newLayer]?.name} 
+            Edit layer: ${maps[ACTIVE_MAP].layers[newLayer]?.name} 
             <div class="dropdown left">
                 <div class="item nohover">Layer: ${maps[ACTIVE_MAP].layers[newLayer]?.name} </div>
                 <div title="slider-wrapper removed" class="item">
