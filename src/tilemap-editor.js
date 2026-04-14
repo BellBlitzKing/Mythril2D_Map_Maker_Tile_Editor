@@ -266,7 +266,7 @@
         </div>
       <details style="margin-right: 20px; margin-top: 10px;" class="card_right-column layers" open>
 
-<summary style="color: gold !important;"><text title="press the arrow to show / hide map & layer features">|</text>
+<summary title="Press the Arrow ▶ to show / hide map & layer features" style="color: gold !important;"><text title="Press the Arrow ▶ to show / hide map & layer features">|</text>
       
       <div id="mapSelectContainer" class="tilemaps_selector">
             <select title="Pick a Map from the list" style="font-size: small !important" name="mapsData" id="mapsDataSel"></select>
