@@ -136,15 +136,18 @@
             <div class="tileset_opt_field">
                 <span style="cursor: default;" >Grid:  </span>
                 <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
-                <a style="cursor: help; text-decoration: none;" title="Settings and grid options" class="button" href="#popup1">⚙️</a>
+                <span class="flex">W: </span><input id="canvasWidthInp" value="1" type="number" min="1">
+                <span class="flex">H: </span><input id="canvasHeightInp" value="1" type="number" min="1">
+                <button id="renameMapBtn" title="✍️">Rename</button>
+                <a style="display: none; visibility: hidden; cursor: help; text-decoration: none;" title="Settings and grid options" class="button" href="#popup1">⚙️</a>
 
             </div>
 
         <div class="tool_wrapper">
-            <label id="undoBtn" title="Undo"><small>undo </small>↩️️</label>
-            <label id="redoBtn" title="Redo"><small>redo </small>🔃</label>
-            <label style="cursor: zoom-in;" id="zoomIn" title="Zoom in">🔎️+</label>
-            <label style="cursor: zoom-out;" id="zoomOut" title="Zoom out">🔎️-</label>
+            <label style="font-size: medium;" id="undoBtn" title="Undo action">↩️️</label>
+            <label style="font-size: medium;" id="redoBtn" title="Redo action">↪️</label>
+            <label style="cursor: zoom-in;" id="zoomIn" title="Zoom in">🔎️✚</label>
+            <label style="cursor: zoom-out;" id="zoomOut" title="Zoom out">🔎️▬</label>
             <label id="zoomLabel">️</label>
         </div>
             
@@ -274,20 +277,18 @@
             <button style="cursor: cell;" id="duplicateMapBtn" title="Clone Copy this Map"><b>⧉</b></button>
             <button id="removeMapBtn" title="⚠️ Delete this Map ⚠️">🗑️</button>        
             
-            <div id="popup1" class="overlay">
+            <div style="display: none; visibility: hidden;" id="popup1" class="overlay">
             <div class="popup">
             <h4>TileMap settings</h4>
             <a class="close" href="#">&times;</a>
             <div class="content">
-                <span class="flex">Width: </span><input id="canvasWidthInp" value="1" type="number" min="1">
-                <span class="flex">Height: </span><input id="canvasHeightInp" value="1" type="number" min="1">
                 <br/><br/>
                 <span class="flex">Grid tile size: </span><input type="number" id="gridCropSize" name="crop" placeholder="32" min="1" max="128">
                 <span class="flex">Grid color: </span><input type="color" value="#ff0000" id="gridColorSel">
                 <span class="flex">Show grid above: </span> <input type="checkbox" id="showGrid">
                 <br/><br/>
                 <div class="tileset_opt_field">
-                    <button id="renameMapBtn" title="Rename map">Rename</button>
+                    
                 </div>
             </div>
             </div>
