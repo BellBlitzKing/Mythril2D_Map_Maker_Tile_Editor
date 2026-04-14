@@ -306,6 +306,11 @@
         </label>
         <div style="font-size: small;" class="layers" id="layers">
       </div>
+                    <div class="slider-wrapper">
+                      <label for="layerOpacitySlider">Opacity</label>
+                      <input type="range" min="0" max="1" value="1" id="layerOpacitySlider" step="0.01">
+                      <output for="layerOpacitySlider" id="layerOpacitySliderValue">${maps[ACTIVE_MAP].layers[newLayer]?.opacity}</output>
+                    </div>
       </details>
       </div>
     </div>
@@ -395,12 +400,8 @@
             𖤣 Edit layer: ${maps[ACTIVE_MAP].layers[newLayer]?.name} 
             <div class="dropdown left">
                 <div class="item nohover">Layer: ${maps[ACTIVE_MAP].layers[newLayer]?.name} </div>
-                <div class="item">
-                    <div class="slider-wrapper">
-                      <label for="layerOpacitySlider">Opacity</label>
-                      <input type="range" min="0" max="1" value="1" id="layerOpacitySlider" step="0.01">
-                      <output for="layerOpacitySlider" id="layerOpacitySliderValue">${maps[ACTIVE_MAP].layers[newLayer]?.opacity}</output>
-                    </div>
+                <div title="slider-wrapper removed" class="item">
+
                 </div>
             </div>
         `;
