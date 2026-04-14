@@ -136,9 +136,9 @@
             <div class="tileset_opt_field">
                 <span style="cursor: default;" >Grid:  </span>
                 <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
-                <span class="flex">W: </span><input id="canvasWidthInp" value="1" type="number" min="1">
-                <span class="flex">H: </span><input id="canvasHeightInp" value="1" type="number" min="1">
-                <button id="renameMapBtn" title="✍️">Rename</button>
+                <span class="flex">H: </span><input title="How Tall / Change Height of Map" id="canvasHeightInp" value="1" type="number" min="1">
+                <span class="flex">W: </span><input title="How Wide / Change Width of Map" id="canvasWidthInp" value="1" type="number" min="1">
+                <button id="renameMapBtn" title="Rename map">✍️📝💳</button>
                 <a style="display: none; visibility: hidden; cursor: help; text-decoration: none;" title="Settings and grid options" class="button" href="#popup1">⚙️</a>
 
             </div>
@@ -146,8 +146,8 @@
         <div class="tool_wrapper">
             <label style="font-size: medium;" id="undoBtn" title="Undo action">↩️️</label>
             <label style="font-size: medium;" id="redoBtn" title="Redo action">↪️</label>
-            <label style="cursor: zoom-in;" id="zoomIn" title="Zoom in">🔎️✚</label>
-            <label style="cursor: zoom-out;" id="zoomOut" title="Zoom out">🔎️▬</label>
+            <label style="cursor: zoom-in;" id="zoomIn" title="Zoom in">🔎️+</label>
+            <label style="cursor: zoom-out;" id="zoomOut" title="Zoom out">🔎️–</label>
             <label id="zoomLabel">️</label>
         </div>
             
