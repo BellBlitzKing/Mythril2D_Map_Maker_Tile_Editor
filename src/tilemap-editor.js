@@ -134,9 +134,9 @@
         </div>
 
             <div class="tileset_opt_field">
-                <span class="flex">H: </span><input title="How Tall / Change Height of Map" id="canvasHeightInp" value="1" type="number" min="1">
-                <span class="flex">  W: </span><input title="How Wide / Change Width of Map" id="canvasWidthInp" value="1" type="number" min="1">
-                <span style="cursor: default;" >  Grid:  </span>
+                <span class="flex">  h ⬆</span><input title="How Tall / Change Height of Map" id="canvasHeightInp" value="1" type="number" min="1">
+                <span class="flex">  w ➡</span><input title="How Wide / Change Width of Map" id="canvasWidthInp" value="1" type="number" min="1">
+                <span style="cursor: default;" >  g ⊞  </span>
                 <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
                 <button style="border: none; background-color: inherit; margin: 0px; padding: 0px;" id="renameMapBtn" title="Rename this Map">  ✍️</button>
                 <a style="display: none; visibility: hidden; cursor: help; text-decoration: none;" title="Settings and grid options" class="button" href="#popup1">⚙️</a>
