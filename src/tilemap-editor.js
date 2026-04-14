@@ -391,7 +391,9 @@
         }
 
         document.querySelector(`.layer[tile-layer="${newLayer}"]`)?.classList.add('active');
-        document.getElementById("activeLayerLabel").innerHTML = `
+
+        /*HIDE Opacity drop-down menu */
+        /* document.getElementById("activeLayerLabel").innerHTML = `
             Edit layer: ${maps[ACTIVE_MAP].layers[newLayer]?.name} 
             <div class="dropdown left">
                 <div class="item nohover">Layer: ${maps[ACTIVE_MAP].layers[newLayer]?.name} </div>
@@ -403,7 +405,8 @@
                     </div>
                 </div>
             </div>
-        `;
+        `;  */
+        
         document.getElementById("layerOpacitySlider").value = maps[ACTIVE_MAP].layers[newLayer]?.opacity;
         document.getElementById("layerOpacitySlider").addEventListener("change", e =>{
             addToUndoStack();
