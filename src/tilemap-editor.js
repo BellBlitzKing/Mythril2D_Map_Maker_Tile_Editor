@@ -129,14 +129,14 @@
               <label style="text-decoration-color: palegreen !important; text-decoration: underline; text-underline-offset: 7px;" for="tool4" title="draw/pick random tile from selected tiles" data-value="4"> 🎲📚 </label>
                <input id="tool5" type="radio" value="5" name="tool" class="hidden"/> 
               <label style="text-decoration-color: deepskyblue !important; text-decoration: underline; text-underline-offset: 7px;" for="tool5" title="fill in tile on selected layer" data-value="5"> 🪣🧱 </label>
-              <button style="font-size: medium; text-decoration-color: #FF5C5C !important; text-decoration: underline; text-underline-offset: 7px; border: none; background-color: inherit; margin: 0px; padding: 0px;" id="clearCanvasBtn" title="⚠️ clear map of all tiles ⚠️">🗑️</button>
+              <button style="text-decoration-color: #FF5C5C !important; text-decoration: underline; text-underline-offset: 7px; border: none; background-color: inherit; margin: 0px; padding: 0px;" id="clearCanvasBtn" title="⚠️ clear map of all tiles ⚠️">🗑️</button>
             </div>
         </div>
 
             <div class="tileset_opt_field">
                 <span class="flex">h </span><input title="How Tall / Change Height of Map" id="canvasHeightInp" value="1" type="number" min="1">
                 <span class="flex">  w </span><input title="How Wide / Change Width of Map" id="canvasWidthInp" value="1" type="number" min="1">
-                <span style="cursor: default;" > grid ⊞ </span>
+                <span style="cursor: default;" >   grid ⊞ </span>
                 <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
             </div>
 
@@ -301,12 +301,11 @@
 </div>
 
         <label class="sticky add_layer">
-            <small><label id="activeLayerLabel">Edit layer</label></small>
+            <small><label id="activeLayerLabel" class="menu">Edit layer</label></small>
             <button style="cursor: cell;" id="addLayerBtn" title="Add new layer">✚</button>
         </label>
         <div style="font-size: small;" class="layers" id="layers">
       </div>
-                  <small><label title="Adjust layer opacity/visibility" style="margin-top: 10px;" class="menu">Edit Layer Opacity</label></small>
       </details>
       </div>
     </div>
