@@ -122,14 +122,14 @@
               <input id="tool1" type="radio" value="1" name="tool" class="hidden"/>
               <label style="text-decoration-color: red !important; text-decoration: underline; text-underline-offset: 7px;" for="tool1" title="erase tiles" data-value="1">❌</label>
               <input id="tool2" type="radio" value="2" name="tool" class="hidden"/> 
-              <label style="text-decoration-color: lightskyblue !important; text-decoration: underline; text-underline-offset: 7px;" for="tool2" title="pan" data-value="2"> ◀🌐▶ </label>
+              <label style="cursor: all-scroll; text-decoration-color: lightskyblue !important; text-decoration: underline; text-underline-offset: 7px;" for="tool2" title="move and scroll around the map" data-value="2"> ◀🌐▶ </label>
               <input id="tool3" type="radio" value="3" name="tool" class="hidden"/> 
               <label style="text-decoration-color: mistyrose !important; text-decoration: underline; text-underline-offset: 7px;" for="tool3" title="pick tile" data-value="3"> 🎨👆 </label>
               <input id="tool4" type="radio" value="4" name="tool" class="hidden"/> 
               <label style="text-decoration-color: palegreen !important; text-decoration: underline; text-underline-offset: 7px;" for="tool4" title="random from selected" data-value="4"> 🎲📚 </label>
                <input id="tool5" type="radio" value="5" name="tool" class="hidden"/> 
               <label style="text-decoration-color: deepskyblue !important; text-decoration: underline; text-underline-offset: 7px;" for="tool5" title="fill on layer" data-value="5"> 🪣🧱 </label>
-              <button style="font-size: medium; text-decoration-color: #FF5C5C !important; text-decoration: underline; text-underline-offset: 7px; border: none; background-color: inherit; margin: 0px; padding: 0px;" id="clearCanvasBtn" title="clear map">🗑️</button>
+              <button style="font-size: medium; text-decoration-color: #FF5C5C !important; text-decoration: underline; text-underline-offset: 7px; border: none; background-color: inherit; margin: 0px; padding: 0px;" id="clearCanvasBtn" title="clear map of all tiles ⚠️">🗑️</button>
             </div>
         </div>
 
@@ -174,10 +174,10 @@
 
             <div class="select_container layer sticky_top sticky_left"  id="mapSelectContainer" style="margin-bottom: 5px">
             <small style="cursor: default; color: gold !important;" title="Pick Tilesets from the dropdown list">Tiles: </small><select style="cursor: pointer; margin-left: 3px;" name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
-            <button style="cursor: default;" id="addTilesetBtn" title="add tileset">✚</button>
+            <button style="cursor: copy;" id="addTilesetBtn" title="add tileset">✚</button>
             <input id="tilesetReadInput" type="file" style="display: none" />
-            <button style="cursor: default;" id="removeTilesetBtn" title="remove">🗑️</button>
-            <button style="font-size: 15px; cursor: default;" id="replaceTilesetBtn" title="replace tileset"><b>⇄</b></button>
+            <button style="cursor: default;" id="removeTilesetBtn" title="remove a tile ⚠️">🗑️</button>
+            <button style="font-size: 15px; cursor: alias;" id="replaceTilesetBtn" title="replace this tileset (upload)"><b>⇄</b></button>
             <input id="tilesetReplaceInput" type="file" style="display: none" />
             </div>
         
@@ -199,7 +199,7 @@
                         <div class="item"> 
                             💡 object:
                             <button id="renameTileFrameBtn" title="rename object">📝</button>
-                            <button id="removeTileFrameBtn" title="remove">🗑️</button>
+                            <button id="removeTileFrameBtn" title="remove ⚠️">🗑️</button>
                              <button id="addTileFrameBtn" title="add new object">+ new</button>
                         </div>
 <!--                        <div class="item nohover">Object parameters:</div>-->
@@ -258,7 +258,7 @@
         <div style="cursor: default;" class="canvas_wrapper" id="canvas_wrapper">
           <canvas id="mapCanvas" width="${width}" height="${height}"></canvas>
           <div class="canvas_resizer" resizerdir="y"><input value="1" type="number" min="1" resizerdir="y"><small><span>   ⬆ y ⬇</span></small>
-          <small><br><br><label for="tool2" title="pan around map" data-value="2">◀🌐▶</label></small>
+          <small><br><br><label style="cursor: all-scroll;" for="tool2" title="move and scroll around map" data-value="2">◀🌐▶</label></small>
           </div>
           <div class="canvas_resizer vertical" resizerdir="x"><input value="${mapTileWidth}" type="number" min="1" resizerdir="x"><small><span> ⬅ x ➡</span></small>
           </div>
@@ -270,9 +270,9 @@
       
       <div id="mapSelectContainer" class="tilemaps_selector">
             <select style="font-size: small !important" name="mapsData" id="mapsDataSel"></select>
-            <button id="addMapBtn" title="Add tilemap">✚</button>
-            <button id="removeMapBtn" title="Remove tilemap">🗑️</button>        
-            <button id="duplicateMapBtn" title="Clone Copy map"><b>⧉</b></button>     
+            <button style="cursor: copy;" id="addMapBtn" title="Add a new tilemap (upload)">✚</button>
+            <button id="removeMapBtn" title="Remove this tilemap ⚠️">🗑️</button>        
+            <button style="cursor: copy;" id="duplicateMapBtn" title="Clone Copy map"><b>⧉</b></button>     
             
             <div id="popup1" class="overlay">
             <div class="popup">
@@ -298,7 +298,7 @@
 
         <label class="sticky add_layer">
             <small><label id="activeLayerLabel" class="menu">𖤣 Edit layer</label></small>
-            <button title="add new layer" id="addLayerBtn" title="Add layer">✚</button>
+            <button style="cursor: copy;" id="addLayerBtn" title="Add new layer">✚</button>
         </label>
         <div class="layers" id="layers">
       </div>
@@ -443,7 +443,7 @@
                 <div id="selectLayerBtn-${index}" class="layer select_layer" tile-layer="${index}" title="${layer.name}" draggable="false">${layer.name} ${layer.opacity < 1 ? ` (${layer.opacity})` : ""}</div>
                 <span id="setLayerVisBtn-${index}" vis-layer="${index}" draggable="false"></span>
                 <span id="lockLayerBtn-${index}" lock-layer="${index}" draggable="false"></span>
-                <div id="trashLayerBtn-${index}" trash-layer="${index}" ${maps[ACTIVE_MAP].layers.length > 1 ? "" : `disabled="true"`} draggable="false">🗑️</div>
+                <div title="remove delete this layer ⚠️" id="trashLayerBtn-${index}" trash-layer="${index}" ${maps[ACTIVE_MAP].layers.length > 1 ? "" : `disabled="true"`} draggable="false">🗑️</div>
               </div>
             `
         }).reverse().join("\n")
