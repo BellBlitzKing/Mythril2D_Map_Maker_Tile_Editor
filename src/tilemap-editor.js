@@ -138,9 +138,6 @@
                 <span class="flex">  w ➡</span><input title="How Wide / Change Width of Map" id="canvasWidthInp" value="1" type="number" min="1">
                 <span style="cursor: default;" >  g ⊞  </span>
                 <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
-                <button style="border: none; background-color: inherit; margin: 0px; padding: 0px;" id="renameMapBtn" title="Rename this Map">  ✍️</button>
-                <a style="display: none; visibility: hidden; cursor: help; text-decoration: none;" title="Settings and grid options" class="button" href="#popup1">⚙️</a>
-
             </div>
 
         <div class="tool_wrapper">
@@ -272,10 +269,7 @@
       
       <div id="mapSelectContainer" class="tilemaps_selector">
             <select title="Pick a Map from the list" style="font-size: small !important" name="mapsData" id="mapsDataSel"></select>
-            <button style="cursor: cell;" id="addMapBtn" title="Add a New Map (empty)">✚</button>
-            <button style="cursor: cell;" id="duplicateMapBtn" title="Clone Copy this Map"><b>⧉</b></button>
-            <button id="removeMapBtn" title="⚠️ Delete this Map ⚠️">🗑️</button>        
-            
+               
             <div style="display: none; visibility: hidden;" id="popup1" class="overlay">
             <div class="popup">
             <h4>TileMap settings</h4>
@@ -295,7 +289,12 @@
         </div>
         
 </summary>
-
+            <button style="cursor: cell;" id="addMapBtn" title="Add New Map">✚</button>
+            <button style="cursor: cell;" id="duplicateMapBtn" title="Clone Copy this Map"><b>⧉</b></button>
+            <button id="removeMapBtn" title="⚠️ Delete this Map ⚠️">🗑️</button>     
+            <button style="border: none; background-color: inherit; margin: 0px; padding: 0px;" id="renameMapBtn" title="Rename this Map">✎</button>
+            <a style="display: none; visibility: hidden; cursor: help; text-decoration: none;" title="Settings and grid options" class="button" href="#popup1">⚙️</a>
+                
         <label class="sticky add_layer">
             <small><label id="activeLayerLabel" class="menu">𖤣 Edit layer</label></small>
             <button style="cursor: cell;" id="addLayerBtn" title="Add new layer">✚</button>
