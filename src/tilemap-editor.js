@@ -134,11 +134,11 @@
         </div>
 
             <div class="tileset_opt_field">
-                <span style="cursor: default;" >Grid:  </span>
-                <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
                 <span class="flex">H: </span><input title="How Tall / Change Height of Map" id="canvasHeightInp" value="1" type="number" min="1">
-                <span class="flex">W: </span><input title="How Wide / Change Width of Map" id="canvasWidthInp" value="1" type="number" min="1">
-                <button style="border: none; background-color: inherit; margin: 0px; padding: 0px;" id="renameMapBtn" title="Rename Map title">✍️</button>
+                <span class="flex">  W: </span><input title="How Wide / Change Width of Map" id="canvasWidthInp" value="1" type="number" min="1">
+                <span style="cursor: default;" >  Grid:  </span>
+                <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
+                <button style="border: none; background-color: inherit; margin: 0px; padding: 0px;" id="renameMapBtn" title="Rename this Map">  ✍️</button>
                 <a style="display: none; visibility: hidden; cursor: help; text-decoration: none;" title="Settings and grid options" class="button" href="#popup1">⚙️</a>
 
             </div>
@@ -260,10 +260,9 @@
         <div class="card_right-column" style="position:relative" id="canvas_drag_area">
         <div style="cursor: default;" class="canvas_wrapper" id="canvas_wrapper">
           <canvas id="mapCanvas" width="${width}" height="${height}"></canvas>
-          <div class="canvas_resizer" resizerdir="y"><input value="1" type="number" min="1" resizerdir="y"><small><span>   ⬆ y ⬇</span></small>
-          <small><br><br><label style="cursor: move;" for="tool2" title="move and scroll around map" data-value="2">◀🌐▶</label></small>
+          <div title="How Tall / Change Height of Map" class="canvas_resizer" resizerdir="y"><input value="1" type="number" min="1" resizerdir="y"><small><span>   ⬆ h ⬇</span></small>
           </div>
-          <div class="canvas_resizer vertical" resizerdir="x"><input value="${mapTileWidth}" type="number" min="1" resizerdir="x"><small><span> ⬅ x ➡</span></small>
+          <div title="How Wide / Change Width of Map" class="canvas_resizer vertical" resizerdir="x"><input value="${mapTileWidth}" type="number" min="1" resizerdir="x"><small><span>⬅ w ➡</span></small>
           </div>
         </div>
         </div>
