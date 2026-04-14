@@ -289,12 +289,16 @@
         </div>
         
 </summary>
+
+<div style="background-color: transparent; justify-content: right;" id="mapSelectContainer" class="tilemaps_selector">
+
             <button style="cursor: cell;" id="addMapBtn" title="Add New Map">✚</button>
             <button style="cursor: cell;" id="duplicateMapBtn" title="Clone Copy this Map"><b>⧉</b></button>
             <button id="removeMapBtn" title="⚠️ Delete this Map ⚠️">🗑️</button>     
-            <button style="border: none; background-color: inherit; margin: 0px; padding: 0px;" id="renameMapBtn" title="Rename this Map">✎</button>
+            <button style="font-size: medium;" id="renameMapBtn" title="Rename this Map">✎</button>
             <a style="display: none; visibility: hidden; cursor: help; text-decoration: none;" title="Settings and grid options" class="button" href="#popup1">⚙️</a>
-                
+</div>
+
         <label class="sticky add_layer">
             <small><label id="activeLayerLabel" class="menu">𖤣 Edit layer</label></small>
             <button style="cursor: cell;" id="addLayerBtn" title="Add new layer">✚</button>
