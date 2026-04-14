@@ -134,7 +134,7 @@
         </div>
 
             <div class="tileset_opt_field">
-                <span>Grid:  </span>
+                <span style="cursor: default;" >Grid:  </span>
                 <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
                 <a style="cursor: help; text-decoration: none;" title="Settings and grid options" class="button" href="#popup1">⚙️</a>
 
@@ -176,9 +176,9 @@
             <small style="cursor: default; color: gold !important;" title="Pick Tilesets from the dropdown list">Tiles: </small><select style="cursor: pointer; margin-left: 3px;" name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
             <button style="cursor: cell;" id="addTilesetBtn" title="add a new tileset (upload)">✚</button>
             <input id="tilesetReadInput" type="file" style="display: none" />
-            <button style="cursor: default;" id="removeTilesetBtn" title="⚠️ delete this tileset ⚠️">🗑️</button>
             <button style="font-size: 15px;" id="replaceTilesetBtn" title="replace this tileset (upload)"><b>⇄</b></button>
             <input id="tilesetReplaceInput" type="file" style="display: none" />
+            <button style="cursor: default;" id="removeTilesetBtn" title="⚠️ delete this tileset ⚠️">🗑️</button>
             </div>
         
         <div style="display: none; visibility: hidden;" class="select_container layer sticky_top sticky_left" id="tilesetSelectContainer">
@@ -199,8 +199,8 @@
                         <div class="item"> 
                             💡 object:
                             <button id="renameTileFrameBtn" title="rename object">📝</button>
-                            <button id="removeTileFrameBtn" title="⚠️ remove ⚠️">🗑️</button>
                              <button id="addTileFrameBtn" title="add new object">+ new</button>
+                            <button id="removeTileFrameBtn" title="⚠️ remove ⚠️">🗑️</button>
                         </div>
 <!--                        <div class="item nohover">Object parameters:</div>-->
                     </div>
@@ -221,8 +221,8 @@
                         <div class="item"> 
                             🎞️ animation:
                             <button id="renameTileAnimBtn" title="rename animation">📝</button>
-                            <button id="removeTileAnimBtn" title="remove">🗑️</button>
                             <button id="addTileAnimBtn" title="add new animation">+ new</button>
+                            <button id="removeTileAnimBtn" title="remove">🗑️</button>
                         </div>
 <!--                        <div class="item nohover">Object parameters:</div>-->
                     </div>
@@ -271,8 +271,8 @@
       <div id="mapSelectContainer" class="tilemaps_selector">
             <select title="Pick a Map from the list" style="font-size: small !important" name="mapsData" id="mapsDataSel"></select>
             <button style="cursor: cell;" id="addMapBtn" title="Add a New Map (empty)">✚</button>
+            <button style="cursor: cell;" id="duplicateMapBtn" title="Clone Copy this Map"><b>⧉</b></button>
             <button id="removeMapBtn" title="⚠️ Delete this Map ⚠️">🗑️</button>        
-            <button style="cursor: cell;" id="duplicateMapBtn" title="Clone Copy this Map"><b>⧉</b></button>     
             
             <div id="popup1" class="overlay">
             <div class="popup">
@@ -439,7 +439,7 @@
         layersElement.innerHTML = maps[ACTIVE_MAP].layers.map((layer, index)=>{
             return `
               <div class="layer" data-layer-index="${index}">
-                <small><div class="layer-handle" handle-layer="${index}" draggable="false">↕️</div></small>
+                <small><div title="drag and reorder this layer" class="layer-handle" handle-layer="${index}" draggable="false">↕️</div></small>
                 <div id="selectLayerBtn-${index}" class="layer select_layer" tile-layer="${index}" title="${layer.name}" draggable="false">${layer.name} ${layer.opacity < 1 ? ` (${layer.opacity})` : ""}</div>
                 <span title="hide / show this layer" id="setLayerVisBtn-${index}" vis-layer="${index}" draggable="false"></span>
                 <span id="lockLayerBtn-${index}" lock-layer="${index}" draggable="false"></span>
