@@ -105,7 +105,7 @@
             </div>
         </div>
         
-        <div style="font-size: medium;">
+        <div>
             <div id="toolButtonsWrapper" class="tool_wrapper"> <label style="color: gold !important;" title="Use tools to the right to build your map"><small>Tools:</small></label>
               <input id="tool0" type="radio" value="0" name="tool" checked class="hidden"/>
               <label for="tool0" title="draw tiles" data-value="0" class="menu">
@@ -138,7 +138,7 @@
                 <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
                 <span class="flex">H: </span><input title="How Tall / Change Height of Map" id="canvasHeightInp" value="1" type="number" min="1">
                 <span class="flex">W: </span><input title="How Wide / Change Width of Map" id="canvasWidthInp" value="1" type="number" min="1">
-                <button id="renameMapBtn" title="Rename map">✍️📝💳</button>
+                <button style="border: none; background-color: inherit; margin: 0px; padding: 0px;" id="renameMapBtn" title="Rename Map title">✍️</button>
                 <a style="display: none; visibility: hidden; cursor: help; text-decoration: none;" title="Settings and grid options" class="button" href="#popup1">⚙️</a>
 
             </div>
