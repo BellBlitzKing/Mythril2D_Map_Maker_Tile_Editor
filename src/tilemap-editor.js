@@ -81,8 +81,9 @@
        <div class="tileset_opt_field header">
        <div style="cursor: default;" class="menu file">
             <span>File Save 💾</span>
-            <div class="dropdown" id="fileMenuDropDown">                            
-                <a class="button item button-as-link" href="#popup2">About</a>
+            <div class="dropdown" id="fileMenuDropDown">
+                <a style="display:inline" class="button item button-as-link" href="https://kingbell.itch.io/pixel-sprite-mixer">Give Review 🤩</a>
+                <a style="display:inline" class="button item button-as-link" href="https://kingbell.itch.io/pixel-sprite-mixer/rate">Downloads 📥</a>
                 <div id="popup2" class="overlay">
                 <div class="popup">
                 <h4>Tilemap editor</h4>
