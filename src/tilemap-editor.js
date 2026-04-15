@@ -271,7 +271,7 @@
       <div style="background-color: transparent;" id="mapSelectContainer" class="tilemaps_selector">
 
             <text title="Press the Arrow ▶ to show / hide map & layer features">🌐  </text>
-            <select title="Pick a Map from the list" name="mapsData" id="mapsDataSel"></select>
+            <select style="width: 145px;" title="Pick Map from the list" name="mapsData" id="mapsDataSel"></select>
                
             <div style="display: none; visibility: hidden;" id="popup1" class="overlay">
             <div class="popup">
