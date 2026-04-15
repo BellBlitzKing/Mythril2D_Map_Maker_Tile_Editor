@@ -193,8 +193,8 @@
             <input id="tilesetReplaceInput" type="file" style="display: none" />
             <button style="cursor: default;" id="removeTilesetBtn" title="⚠️ delete this tileset ⚠️">🗑️</button>
             <br>
-            <button id="testerz" onclick="window.scrollBy(100, 100)">33</button>
-
+            <button onclick="window.scrollBy(100, 100)">33</button> <br>
+            <button onclick="window.scrollBy(0, 100);" style="position:fixed;">me scroll</button>
             </div>
         
         <div style="display: none; visibility: hidden;" class="select_container layer sticky_top sticky_left" id="tilesetSelectContainer">
