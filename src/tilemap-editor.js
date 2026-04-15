@@ -397,9 +397,10 @@
         document.getElementById("activeLayerOpacity").innerHTML = `
             <div class="dropdown left">
                 <div title="slider-wrapper" class="item">
-                    <small>
+                    <small><br>
                     <div style="font-size: small;" class="slider-wrapper">
-                      <label for="layerOpacitySlider">Transparent Opacity</label><br>
+                      <label title="Opacity change for layer transparency" for="layerOpacitySlider">Layer Glass Transparency</label><br>
+                      <text>⎚-⎚ 🪟 🧊</text>
                       <input type="range" min="0" max="1" value="1" id="layerOpacitySlider" step="0.01">
                       <output for="layerOpacitySlider" id="layerOpacitySliderValue">${maps[ACTIVE_MAP].layers[newLayer]?.opacity}</output>
                     </div>
