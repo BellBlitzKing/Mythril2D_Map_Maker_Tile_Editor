@@ -82,7 +82,7 @@
        <div style="cursor: default;" class="menu file">
             <span>File Save 💾</span>
             <div class="dropdown" id="fileMenuDropDown">                            
-                <a style="display: none; visibility: hidden;" class="button item button-as-link" href="#popup2">About</a>
+                <a class="button item button-as-link" href="#popup2">About</a>
                 <div id="popup2" class="overlay">
                 <div class="popup">
                 <h4>Tilemap editor</h4>
@@ -139,7 +139,7 @@
             <div class="tileset_opt_field">
                 <span class="flex">h </span><input title="How Tall / Change Height of Map" id="canvasHeightInp" value="1" type="number" min="1">
                 <span class="flex">  w </span><input title="How Wide / Change Width of Map" id="canvasWidthInp" value="1" type="number" min="1">
-                <span style="cursor: default;" >  grid ⊞ </span>
+                <span title="Change Grid ⊞ Tile Size" style="cursor: default;" >  grid:  </span>
                 <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
             </div>
 
