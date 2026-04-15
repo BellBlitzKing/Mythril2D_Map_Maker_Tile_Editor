@@ -136,6 +136,7 @@
                 <label></label>
                 <label style="font-size: medium;" id="undoBtn" title="Undo action">↩️️</label>
                 <label style="font-size: medium;" id="redoBtn" title="Redo action">↪️</label>
+                <button onclick="window.scrollTo({ top: 500, behavior: 'smooth' })">Scroll to</button>
             </div>
         </div>
 
@@ -184,6 +185,8 @@
             <button style="font-size: 15px;" id="replaceTilesetBtn" title="replace this tileset (upload)"><b>⇄</b></button>
             <input id="tilesetReplaceInput" type="file" style="display: none" />
             <button style="cursor: default;" id="removeTilesetBtn" title="⚠️ delete this tileset ⚠️">🗑️</button>
+            <br>
+            <button id="testing" onclick="window.scrollTo({ top: 250, behavior: 'smooth' })">Scroll 2</button>
             </div>
         
         <div style="display: none; visibility: hidden;" class="select_container layer sticky_top sticky_left" id="tilesetSelectContainer">
