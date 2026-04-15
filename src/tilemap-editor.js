@@ -136,7 +136,7 @@
                 <label></label>
                 <label style="font-size: medium;" id="undoBtn" title="Undo action">↩️️</label>
                 <label style="font-size: medium;" id="redoBtn" title="Redo action">↪️</label>
-                <button id='apple'>apple</button>
+                <button id="apple">apple</button>
             </div>
         </div>
 
@@ -2098,9 +2098,12 @@
         document.getElementById("setSymbolsVisBtn").addEventListener("click", ()=>toggleSymbolsVisible())
 
         const appleBtn = document.getElementById('apple')
-        
-        document.getElementById("apple").addEventListener("click", tilesetDataSel=> {
+
+        document.getElementById("apple").addEventListener("click", appleBtn=> {
+            
+            document.getElementById('tilesetDataSel').getElementsByTagName('option')[0].selected = true;
             select.value = '0'
+            
         })
         
         appleBtn.addEventListener('click', () => {tilesetDataSel.select.value = '0'})
