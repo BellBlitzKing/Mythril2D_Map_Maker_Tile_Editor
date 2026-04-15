@@ -136,6 +136,7 @@
                 <label></label>
                 <label style="font-size: medium;" id="undoBtn" title="Undo action">↩️️</label>
                 <label style="font-size: medium;" id="redoBtn" title="Redo action">↪️</label>
+                <button id='apple'>apple</button>
             </div>
         </div>
 
@@ -2095,6 +2096,12 @@
         document.getElementById("zoomIn").addEventListener("click", zoomIn);
         document.getElementById("zoomOut").addEventListener("click", zoomOut);
         document.getElementById("setSymbolsVisBtn").addEventListener("click", ()=>toggleSymbolsVisible())
+
+        const appleBtn = document.getElementById('apple')
+
+        appleBtn.addEventListener('click', () => {
+          select.value = '0'
+        })
         // Scroll zoom in/out - use wheel instead of scroll event since theres no scrollbar on the map
         //canvas.addEventListener('wheel', e=> {
           //  if (e.deltaY < 0) zoomIn();
