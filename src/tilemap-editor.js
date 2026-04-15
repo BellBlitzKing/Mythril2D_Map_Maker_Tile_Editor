@@ -399,8 +399,8 @@
                 <div title="slider-wrapper" class="item">
                     <small><br>
                     <div style="font-size: small;" class="slider-wrapper">
-                      <label title="Opacity change for layer transparency" for="layerOpacitySlider">  🥃 Layer Glass Transparency</label><br>
-                      <text>&hairsp;&hairsp;🪟</text>
+                      <label title="Opacity change for layer transparency" for="layerOpacitySlider">    🥃   Layer Clear Opacity</label><br>
+                      <text>  &hairsp;&hairsp;🪟</text>
                       <input style="height: 5px;" type="range" min="0" max="1" value="1" id="layerOpacitySlider" step="0.01">
                       <output for="layerOpacitySlider" id="layerOpacitySliderValue">${maps[ACTIVE_MAP].layers[newLayer]?.opacity}</output>
                     </div>
