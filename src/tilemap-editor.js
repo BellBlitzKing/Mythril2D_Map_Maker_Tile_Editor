@@ -137,7 +137,13 @@
                 <label style="font-size: medium;" id="undoBtn" title="Undo action">↩️️</label>
                 <label style="font-size: medium;" id="redoBtn" title="Redo action">↪️</label>
 
-                <button id="tester" onclick="window.scrollBy(100, 100)">two</button>
+                <button id="tester" onclick="window.scrollBy(0, 100);">two</button>
+                
+                  <button id="testerzzz" onclick="window.scrollBy({100, 0});">thre</button>
+
+                  
+                  <button id="testerggg" onclick="window.scroll({top: 100, left: 100, behavior: "smooth",});">four</button>
+  
             </div>
         </div>
 
