@@ -2099,11 +2099,11 @@
 
         const appleBtn = document.getElementById('apple')
         
-        document.getElementById("apple").addEventListener("click", apple=> {
+        document.getElementById("apple").addEventListener("click", tilesetDataSel=> {
             select.value = '0'
         })
         
-        appleBtn.addEventListener('click', () => {select.value = '0'})
+        appleBtn.addEventListener('click', () => {tilesetDataSel.select.value = '0'})
         
         // Scroll zoom in/out - use wheel instead of scroll event since theres no scrollbar on the map
         //canvas.addEventListener('wheel', e=> {
