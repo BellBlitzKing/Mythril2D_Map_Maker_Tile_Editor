@@ -130,7 +130,7 @@
                <input id="tool5" type="radio" value="5" name="tool" class="hidden"/> 
               <label style="text-decoration-color: deepskyblue !important; text-decoration: underline; text-underline-offset: 7px;" for="tool5" title="fill in tile on selected layer" data-value="5"> 🪣🧱 </label>
               <button style="text-decoration-color: #FF5C5C !important; text-decoration: underline; text-underline-offset: 7px; border: none; background-color: inherit; margin: 0px; padding: 0px;" id="clearCanvasBtn" title="⚠️ clear map of all tiles ⚠️">🗑️</button>
-                <text>  |  </text>
+                <label></label>
                 <label style="font-size: medium;" id="undoBtn" title="Undo action">↩️️</label>
                 <label style="font-size: medium;" id="redoBtn" title="Redo action">↪️</label>
             </div>
