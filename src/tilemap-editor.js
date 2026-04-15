@@ -399,7 +399,7 @@
                 <div title="slider-wrapper" class="item">
                     <small><br>
                     <div style="font-size: small;" class="slider-wrapper">
-                      <label title="Opacity change for layer transparency" for="layerOpacitySlider">    🥃   Layer Clear Opacity</label><br>
+                      <label title="Opacity change for layer transparency" for="layerOpacitySlider">    🥃   layer clear opacity</label><br>
                       <text>  &hairsp;&hairsp;🪟</text>
                       <input style="width: 120px; height: 5px;" type="range" min="0" max="1" value="1" id="layerOpacitySlider" step="0.01">
                       <output for="layerOpacitySlider" id="layerOpacitySliderValue">${maps[ACTIVE_MAP].layers[newLayer]?.opacity}</output>
@@ -1291,7 +1291,7 @@
         tilesetImage.style = `transform: scale(${ZOOM});transform-origin: left top;image-rendering: auto;image-rendering: crisp-edges;image-rendering: pixelated;`;
         tilesetContainer.style.width = `${tilesetImage.width * ZOOM}px`;
         tilesetContainer.style.height = `${tilesetImage.height * ZOOM}px`;
-        document.getElementById("zoomLabel").innerText = `${ZOOM}x`;
+        document.getElementById("zoomLabel").innerText = `${ZOOM}x      `; /*Add spacing behind the x for better visibility */
         updateTilesetGridContainer();
         updateSelection(false);
         updateMapSize({mapWidth: mapTileWidth, mapHeight: mapTileHeight});
