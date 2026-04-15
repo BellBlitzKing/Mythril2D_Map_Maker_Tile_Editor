@@ -139,10 +139,10 @@
 
                 <button id="tester" onclick="window.scrollBy(0, 100);">two</button>
                 
-                  <button id="testerzzz" onclick="window.scrollBy({100, 0});">thre</button>
+                  <button id="testerzzz" onclick="window.scrollBy(100, 0);">thre</button>
 
                   
-                  <button id="testerggg" onclick="window.scroll({top: 100, left: 100, behavior: "smooth",});">four</button>
+                  <button id="testerggg" onclick="window.scroll(top: 100, left: 100, behavior: "smooth");">four</button>
   
             </div>
         </div>
