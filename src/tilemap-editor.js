@@ -143,6 +143,8 @@
   <button onclick="document.getElementById('card_left_column_alt').scrollBy(0,300);"> me 1  </button>
   <button onclick="document.getElementById('card_left_column_alt').scrollBy(0,400);"> you 1 </button>
 
+  <button onclick="document.getElementById('card_left_column_alt').scroll(0,300);"> gome </button>
+  <button onclick="document.getElementById('card_left_column_alt').scroll(0,400);"> goyou </button>
 
             </div>
         </div>
