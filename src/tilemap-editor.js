@@ -266,9 +266,11 @@
         
       <details style="margin-right: 20px; margin-top: 5px;" class="card_right-column layers" open>
 
-<summary title="Press the Arrow ▶ to show / hide map & layer features" style="color: gold !important; margin-top: 10px;"><text title="Press the Arrow ▶ to show / hide map & layer features">|</text>
+<summary title="Press the Arrow ▶ to show / hide map & layer features" style="color: gold !important; margin-top: 10px;">
       
-      <div id="mapSelectContainer" class="tilemaps_selector">
+      <div style="background-color: transparent;" id="mapSelectContainer" class="tilemaps_selector">
+
+            <text title="Press the Arrow ▶ to show / hide map & layer features">🌐  </text>
             <select title="Pick a Map from the list" name="mapsData" id="mapsDataSel"></select>
                
             <div style="display: none; visibility: hidden;" id="popup1" class="overlay">
