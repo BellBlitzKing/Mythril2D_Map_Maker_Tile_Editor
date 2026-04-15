@@ -136,7 +136,6 @@
                 <label></label>
                 <label style="font-size: medium;" id="undoBtn" title="Undo action">↩️️</label>
                 <label style="font-size: medium;" id="redoBtn" title="Redo action">↪️</label>
-                <button id="apple">apple</button>
             </div>
         </div>
 
@@ -2096,53 +2095,6 @@
         document.getElementById("zoomIn").addEventListener("click", zoomIn);
         document.getElementById("zoomOut").addEventListener("click", zoomOut);
         document.getElementById("setSymbolsVisBtn").addEventListener("click", ()=>toggleSymbolsVisible())
-
-        const appleBtn = document.getElementById('apple')
-
-        document.getElementById("apple").addEventListener("click", appleBtn=> {
-            
-            document.getElementById('tilesetDataSel').getElementsByTagName('option')[0].selected = true;
-            select.value = '0'
-
- setTimeout(()=>{
-                document.getElementById("tilesetDataDetails").open = false;
-            },100);
-
-            selection = getSelectedTile(e);
-            updateSelection();
-            selection = getSelectedTile(e);
-            tileSelectStart = null;
-
-            const viewMode = tileDataSel.value;
-            if(viewMode === "" && e.button === 2){
-                renameCurrentTileSymbol();
-                return;
-            }
-            if (e.button === 0) {
-                if(DISPLAY_SYMBOLS && viewMode !== "" && viewMode !== "frames"){
-                    selection.forEach(selected=>{
-                        addToUndoStack();
-                        const {x, y} = selected;
-                        const tileKey = `${x}-${y}`;
-                        const tagTiles = tileSets[tilesetDataSel.value]?.tags[viewMode]?.tiles;
-                        if (tagTiles){
-                            if(tileKey in tagTiles) {
-                                delete tagTiles[tileKey]
-                            }else {
-                                tagTiles[tileKey] = { mark: "O"};
-                            }
-                        }
-                    });
-                } else if (viewMode === "frames") {
-                    setFramesToSelection(tileFrameSel.value);
-                }
-                updateTilesetGridContainer();
-            }
-
-            
-        });
-        
-        appleBtn.addEventListener('click', () => {tilesetDataSel.select.value = '0'})
         
         // Scroll zoom in/out - use wheel instead of scroll event since theres no scrollbar on the map
         //canvas.addEventListener('wheel', e=> {
