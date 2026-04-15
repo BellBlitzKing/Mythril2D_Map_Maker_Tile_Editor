@@ -397,11 +397,13 @@
         document.getElementById("activeLayerOpacity").innerHTML = `
             <div class="dropdown left">
                 <div title="slider-wrapper" class="item">
-                    <div class="slider-wrapper">
-                      <label for="layerOpacitySlider">Opacity</label>
+                    <small>
+                    <div style="font-size: small;" class="slider-wrapper">
+                      <label for="layerOpacitySlider">Transparent Opacity</label><br>
                       <input type="range" min="0" max="1" value="1" id="layerOpacitySlider" step="0.01">
                       <output for="layerOpacitySlider" id="layerOpacitySliderValue">${maps[ACTIVE_MAP].layers[newLayer]?.opacity}</output>
                     </div>
+                    </small>
                 </div>
             </div>
         `; 
@@ -411,7 +413,7 @@
 
         `; 
         
-        /*Opacity vis drop-down menu 
+        /*Opacity Combined drop-down menu 
         document.getElementById("activeLayerLabel").innerHTML = `
             Edit layer: ${maps[ACTIVE_MAP].layers[newLayer]?.name} 
             <div style="display: none; visibility: hidden;" class="dropdown left">
