@@ -137,12 +137,16 @@
                 <label style="font-size: medium;" id="undoBtn" title="Undo action">↩️️</label>
                 <label style="font-size: medium;" id="redoBtn" title="Redo action">↪️</label>
 
-  <button onclick="document.getElementById('window').scrollBy(-100,0)"> me  </button>
-  <button onclick="document.getElementById('window').scrollBy(100,0)"> you </button>
+  <button onclick="document.getElementById('window').scrollBy(0,100)"> me  </button>
+  <button onclick="document.getElementById('window').scrollBy(0,200)"> you </button>
 
+  <button onclick="document.getElementById('card_left_column_alt').scrollBy(0,300)"> me  </button>
+  <button onclick="document.getElementById('card_left_column_alt').scrollBy(0,400)"> you </button>
 
-  <button onclick="document.getElementsByClassName('card_left_column').scrollBy(-100,0)"> mine  </button>
-  <button onclick="document.getElementsByClassName('card_left_column').scrollBy(100,0)"> yours </button>
+<button onclick="window.scrollBy(0, 200)">zzz</button>
+<button onclick="window.scrollBy(200, 0)">aaa</button>
+
+<button onclick="window.scrollBy({top: 300,left: 0,behavior: 'smooth'});">moo</button>
 
             </div>
         </div>
@@ -166,7 +170,7 @@
 
       </div>
       <div class="card_body">
-        <div class="card_left_column" style="margin-right: 10px;">
+        <div id="card_left_column_alt" class="card_left_column" style="margin-right: 10px;">
         
         <details style="display: none; visibility: hidden;" class="details_container sticky_left" id="tilesetDataDetails" open="true">
           <summary >
