@@ -137,13 +137,13 @@
                 <label style="font-size: medium;" id="undoBtn" title="Undo action">↩️️</label>
                 <label style="font-size: medium;" id="redoBtn" title="Redo action">↪️</label>
 
-                <button id="tester" onclick="window.scrollBy(0, 100);">two</button>
-                
-                  <button id="testerzzz" onclick="window.scrollBy(100, 0);">thre</button>
+  <button onclick="document.getElementById('window').scrollBy(-100,0)"> me  </button>
+  <button onclick="document.getElementById('window').scrollBy(100,0)"> you </button>
 
-                  
-                  <button id="testerggg" onclick="window.scroll(top: 100, left: 100, behavior: "smooth");">four</button>
-  
+
+  <button onclick="document.getElementsByClassName('card_left_column').scrollBy(-100,0)"> mine  </button>
+  <button onclick="document.getElementsByClassName('card_left_column').scrollBy(100,0)"> yours </button>
+
             </div>
         </div>
 
@@ -192,9 +192,6 @@
             <button style="font-size: 15px;" id="replaceTilesetBtn" title="replace this tileset (upload)"><b>⇄</b></button>
             <input id="tilesetReplaceInput" type="file" style="display: none" />
             <button style="cursor: default;" id="removeTilesetBtn" title="⚠️ delete this tileset ⚠️">🗑️</button>
-            <br>
-            <button onclick="window.scrollBy(100, 100)">33</button> <br>
-            <button onclick="window.scrollBy(0, 100);" style="position:fixed;">me scroll</button>
             </div>
         
         <div style="display: none; visibility: hidden;" class="select_container layer sticky_top sticky_left" id="tilesetSelectContainer">
