@@ -302,11 +302,11 @@
 
 <summary title="Press the ▶ Arrow to show / hide map & layer features" style="color: gold !important; margin-top: 10px;">
       
-      <div style="width: 170px; background-color: transparent;" id="mapSelectContainer" class="tilemaps_selector">
+      <div style="width: 180px; background-color: transparent;" id="mapSelectContainer" class="tilemaps_selector">
 
             <text title="Press the Arrow ▶ to show / hide map & layer features">🌐  </text>
             <select style="width: 145px;" title="Pick Map from the list" name="mapsData" id="mapsDataSel"></select>
-            <button style="font-size: medium; width: 30px;" id="renameMapBtn" title="Rename this Map">✎</button>
+            <button style="border: none; background-color: transparent;" id="renameMapBtn" title="Rename this Map">🎚️</button>
             
             <div style="display: none; visibility: hidden;" id="popup1" class="overlay">
             <div class="popup">
@@ -328,7 +328,7 @@
         
 </summary>
 
-<div style="width: 199px; background-color: transparent; justify-content: center;" id="mapSelectContainer" class="tilemaps_selector">
+<div style="margin-top: 5px; width: 199px; background-color: transparent; justify-content: center;" id="mapSelectContainer" class="tilemaps_selector">
 
             <button style="font-size: small; cursor: cell; width: 55px;" id="addMapBtn" title="Add New Map">✚ Map</button>
             <button style="font-size: small; cursor: cell; width: 55px;" id="addLayerBtn" title="Add new layer">✚ Layer</button>
