@@ -175,19 +175,21 @@
           </div>
         </details>
 
-            <div style="height: 75px; display: block; border-radius: 6px; padding-top: 8px; background-color: #28344290;"  class="select_container layer sticky_top sticky_left"  id="mapSelectContainer" style="margin-bottom: 5px">
+        <div style="height: 75px; display: block; border-radius: 6px; padding-top: 8px; background-color: #28344290;"  class="select_container layer sticky_top sticky_left"  id="mapSelectContainer" style="margin-bottom: 5px">
             
             <label style="cursor: default; title="Pick Tilesets from the dropdown list">👉</label>
             <select style="max-width: 122px; min-width: 122px; cursor: pointer; margin-left: 3px;" name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
 
                 <span title="Change Grid ⊞ Tile Size" style="cursor: default;" >  g: </span>
-                <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
+                <input style="width: 39px;" type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
             
             <button style="cursor: cell;" id="addTilesetBtn" title="add a new tileset (upload)">✚</button>
+            
             <input id="tilesetReadInput" type="file" style="display: none; visibility: hidden;"></input>
             <button style="display: none; visibility: hidden; font-size: 15px;" id="replaceTilesetBtn" title="replace this tileset (upload)"><b>⇄</b></button>
             <input id="tilesetReplaceInput" type="file" style="display: none; visibility: hidden; "></input>
             <button style="display: none; visibility: hidden; cursor: default;" id="removeTilesetBtn" title="⚠️ delete this tileset ⚠️">🗑️</button>
+            
             <br>
                 <div style="margin-top: 5px; margin-bottom: 5px;">
                 
