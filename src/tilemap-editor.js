@@ -436,7 +436,7 @@
                 <div title="slider-wrapper" class="item">
                     <small><br>
                     <div style="font-size: small;" class="slider-wrapper">
-                      <text title="Glass See-through transparent opacity">  🪟👁️</text>
+                      <text title="Glass See-through transparent opacity">   🪟👁️</text>
                       <input title="Glass See-through transparent opacity" style="width: 120px; height: 5px;" type="range" min="0" max="1" value="1" id="layerOpacitySlider" step="0.01">
                       <output for="layerOpacitySlider" id="layerOpacitySliderValue">${maps[ACTIVE_MAP].layers[newLayer]?.opacity}</output>
                     </div>
@@ -506,9 +506,9 @@
               <div class="layer" data-layer-index="${index}">
                 <small><div title="drag and reorder this layer" class="layer-handle" handle-layer="${index}" draggable="false">↕️</div></small>
                 <div id="selectLayerBtn-${index}" class="layer select_layer" tile-layer="${index}" title="${layer.name}" draggable="false">${layer.name} ${layer.opacity < 1 ? ` (${layer.opacity})` : ""}</div>
-                <span title="hide / show this layer" id="setLayerVisBtn-${index}" vis-layer="${index}" draggable="false"></span>
+                <span style="font-size: small; text-align: left;" title="hide / show this layer" id="setLayerVisBtn-${index}" vis-layer="${index}" draggable="false"></span>
                 <span id="lockLayerBtn-${index}" lock-layer="${index}" draggable="false"></span>
-                <div title="⚠️ remove / delete this layer ⚠️" id="trashLayerBtn-${index}" trash-layer="${index}" ${maps[ACTIVE_MAP].layers.length > 1 ? "" : `disabled="true"`} draggable="false">🗑️</div>
+                <div style="font-size: small; text-align: left;" title="⚠️ delete this layer ⚠️" id="trashLayerBtn-${index}" trash-layer="${index}" ${maps[ACTIVE_MAP].layers.length > 1 ? "" : `disabled="true"`} draggable="false">🗑️</div>
               </div>
             `
         }).reverse().join("\n")
