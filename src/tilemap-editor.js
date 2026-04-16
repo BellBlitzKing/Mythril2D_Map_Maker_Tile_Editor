@@ -300,13 +300,14 @@
         
       <details style="margin-right: 20px; margin-top: 5px;" class="card_right-column layers" open>
 
-<summary title="Press the Arrow ▶ to show / hide map & layer features" style="color: gold !important; margin-top: 10px;">
+<summary title="Press the ▶ Arrow to show / hide map & layer features" style="color: gold !important; margin-top: 10px;">
       
-      <div style="background-color: transparent;" id="mapSelectContainer" class="tilemaps_selector">
+      <div style="width: 170px; background-color: transparent;" id="mapSelectContainer" class="tilemaps_selector">
 
             <text title="Press the Arrow ▶ to show / hide map & layer features">🌐  </text>
             <select style="width: 145px;" title="Pick Map from the list" name="mapsData" id="mapsDataSel"></select>
-               
+            <button style="font-size: medium; width: 30px;" id="renameMapBtn" title="Rename this Map">✎</button>
+            
             <div style="display: none; visibility: hidden;" id="popup1" class="overlay">
             <div class="popup">
             <h4>TileMap settings</h4>
@@ -329,17 +330,19 @@
 
 <div style="width: 199px; background-color: transparent; justify-content: center;" id="mapSelectContainer" class="tilemaps_selector">
 
-            <button style="cursor: cell; width: 30px;" id="addMapBtn" title="Add New Map">✚</button>
+            <button style="cursor: cell; width: 30px;" id="addMapBtn" title="Add New Map">✚ Map</button>
+            <button style="cursor: cell;" id="addLayerBtn" title="Add new layer">✚ Layer</button>
             <button style="cursor: cell; width: 30px;" id="duplicateMapBtn" title="Clone Copy this Map"><b>⧉</b></button>
-            <button style="font-size: medium; width: 30px;" id="renameMapBtn" title="Rename this Map">✎</button>
             <button style="width: 30px;" id="removeMapBtn" title="⚠️ Delete this Map ⚠️">🗑️</button>
             <a style="display: none; visibility: hidden; cursor: help; text-decoration: none;" title="Settings and grid options" class="button" href="#popup1">⚙️</a>
 </div>
 
-        <label class="sticky add_layer">
-            <small><label id="activeLayerLabel" class="menu">Edit layer</label></small>
-            <button style="cursor: cell;" id="addLayerBtn" title="Add new layer">✚</button>
+        <label style="display: none; visibility: hidden;" class="sticky add_layer">
+            <small><label style="display: none; visibility: hidden;" id="activeLayerLabel" class="menu">Edit layer</label></small>
         </label>
+
+        <hr>
+        
         <div style="font-size: small;" class="layers" id="layers">
       </div>
              <small><label id="activeLayerOpacity"></label></small>
@@ -435,9 +438,9 @@
                 <div title="slider-wrapper" class="item">
                     <small><br>
                     <div style="font-size: small;" class="slider-wrapper">
-                      <label title="Opacity change for layer transparency" for="layerOpacitySlider">    🥃   layer clear opacity</label><br>
-                      <text>  &hairsp;&hairsp;🪟</text>
-                      <input style="width: 120px; height: 5px;" type="range" min="0" max="1" value="1" id="layerOpacitySlider" step="0.01">
+                      <br>
+                      <text title="Glass See-through transparent opacity">👁️ 🪟</text>
+                      <input title="Glass See-through transparent opacity" style="width: 120px; height: 5px;" type="range" min="0" max="1" value="1" id="layerOpacitySlider" step="0.01">
                       <output for="layerOpacitySlider" id="layerOpacitySliderValue">${maps[ACTIVE_MAP].layers[newLayer]?.opacity}</output>
                     </div>
                     </small>
