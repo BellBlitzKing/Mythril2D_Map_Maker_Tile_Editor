@@ -328,7 +328,7 @@
         
 </summary>
 
-<div style="margin-top: 5px; width: 199px; background-color: transparent; justify-content: center;" id="mapSelectContainer" class="tilemaps_selector">
+<div style="margin-bottom: 8px; margin-top: 8px; width: 199px; background-color: transparent; justify-content: center;" id="mapSelectContainer" class="tilemaps_selector">
 
             <button style="font-size: small; cursor: cell; width: 55px;" id="addMapBtn" title="Add New Map">✚ Map</button>
             <button style="font-size: small; cursor: cell; width: 55px;" id="addLayerBtn" title="Add new layer">✚ Layer</button>
@@ -340,8 +340,6 @@
         <label style="display: none; visibility: hidden;" class="sticky add_layer">
             <small><label style="display: none; visibility: hidden;" id="activeLayerLabel" class="menu">Edit layer</label></small>
         </label>
-
-        <hr>
         
         <div style="font-size: small;" class="layers" id="layers">
       </div>
@@ -438,7 +436,7 @@
                 <div title="slider-wrapper" class="item">
                     <small><br>
                     <div style="font-size: small;" class="slider-wrapper">
-                      <text title="Glass See-through transparent opacity">  👁️🪟</text>
+                      <text title="Glass See-through transparent opacity">  🪟👁️</text>
                       <input title="Glass See-through transparent opacity" style="width: 120px; height: 5px;" type="range" min="0" max="1" value="1" id="layerOpacitySlider" step="0.01">
                       <output for="layerOpacitySlider" id="layerOpacitySliderValue">${maps[ACTIVE_MAP].layers[newLayer]?.opacity}</output>
                     </div>
