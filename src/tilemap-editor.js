@@ -181,13 +181,14 @@
             
             <small style="cursor: default; color: gold !important;" title="Pick Tilesets from the dropdown list">Tiles: </small>
             <select style="max-width: 122px; min-width: 122px; cursor: pointer; margin-left: 3px;" name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
-            <!-- button style="cursor: cell;" id="addTilesetBtn" title="add a new tileset (upload)">✚</button -->
-            <!-- input id="tilesetReadInput" type="file" style="display: none"></input -->
+            <button style="cursor: cell;" id="addTilesetBtn" title="add a new tileset (upload)">✚</button>
+            <input id="tilesetReadInput" type="file" style="display: none"></input>
             <button style="font-size: 15px;" id="replaceTilesetBtn" title="replace this tileset (upload)"><b>⇄</b></button>
             <input id="tilesetReplaceInput" type="file" style="display: none"></input>
             <!-- button style="cursor: default;" id="removeTilesetBtn" title="⚠️ delete this tileset ⚠️">🗑️</button -->
-
+            <br>
                 <span style="margin-top: 8px;">
+                
                   <button title="Tile Category" style="font-size: medium; cursor: pointer; border-color: #283442; border-radius: 3px; background-color: #283442;" onclick="document.getElementById('card_left_column_alt').scrollTo({ left: 0, top: 500, behavior: 'smooth'});">1️⃣</button>
                   <button style="font-size: medium; cursor: pointer; border-color: #283442; border-radius: 3px; background-color: #283442;" onclick="document.getElementById('card_left_column_alt').scrollTo(0,200);">2️⃣</button>
                   <button style="font-size: medium; cursor: pointer; border-color: #283442; border-radius: 3px; background-color: #283442;" onclick="document.getElementById('card_left_column_alt').scrollTo(0,300);">3️⃣</button>
