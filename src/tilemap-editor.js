@@ -185,7 +185,7 @@
             <input id="tilesetReadInput" type="file" style="display: none"></input>
             <button style="font-size: 15px;" id="replaceTilesetBtn" title="replace this tileset (upload)"><b>⇄</b></button>
             <input id="tilesetReplaceInput" type="file" style="display: none"></input>
-            <!-- button style="cursor: default;" id="removeTilesetBtn" title="⚠️ delete this tileset ⚠️">🗑️</button -->
+            <button style="display: none; visibility: hidden; cursor: default;" id="removeTilesetBtn" title="⚠️ delete this tileset ⚠️">🗑️</button>
             <br>
                 <span style="margin-top: 8px;">
                 
