@@ -187,7 +187,7 @@
             <input id="tilesetReplaceInput" type="file" style="display: none"></input>
             <button style="display: none; visibility: hidden; cursor: default;" id="removeTilesetBtn" title="⚠️ delete this tileset ⚠️">🗑️</button>
             <br>
-                <span title="Tile Categories" style="margin-top: 8px;">
+                <div style="margin-top: 5px; margin-bottom: 5px;">
                 
                   <button style="font-size: medium; cursor: pointer; border-color: #283442; border-radius: 3px; background-color: #283442;" onclick="document.getElementById('card_left_column_alt').scrollTo({ left: 0, top: 100, behavior: 'smooth'});">1️⃣</button>
                   <button style="font-size: medium; cursor: pointer; border-color: #283442; border-radius: 3px; background-color: #283442;" onclick="document.getElementById('card_left_column_alt').scrollTo({ left: 0, top: 200, behavior: 'smooth'});">2️⃣</button>
@@ -196,12 +196,9 @@
                   <button style="font-size: medium; cursor: pointer; border-color: #283442; border-radius: 3px; background-color: #283442;" onclick="document.getElementById('card_left_column_alt').scrollTo({ left: 0, top: 400, behavior: 'smooth'});">4️⃣</button>
                   <button style="font-size: medium; cursor: pointer; border-color: #283442; border-radius: 3px; background-color: #283442;" onclick="document.getElementById('card_left_column_alt').scrollTo({ left: 0, top: 500, behavior: 'smooth'});">5️⃣</button>
                   <button style="font-size: medium; cursor: pointer; border-color: #283442; border-radius: 3px; background-color: #283442;" onclick="document.getElementById('card_left_column_alt').scrollTo({ left: 0, top: 600, behavior: 'smooth'});">6️⃣</button>
-                </span> 
+                </div> 
 
             </div>
-
-
-
 
         <div style="display: none; visibility: hidden;" class="select_container layer sticky_top sticky_left" id="tilesetSelectContainer">
             <span id="setSymbolsVisBtn">👓️</span>
