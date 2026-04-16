@@ -137,15 +137,6 @@
                 <label style="font-size: medium;" id="undoBtn" title="Undo action">↩️️</label>
                 <label style="font-size: medium;" id="redoBtn" title="Redo action">↪️</label>
 
-  <button onclick="document.getElementById('card_left_column_alt').scrollTo(0,200);"> tome  </button>
-  <button onclick="document.getElementById('card_left_column_alt').scrollTo(0,300);"> toyou </button>
-
-  <button onclick="document.getElementById('card_left_column_alt').scrollBy(0,300);"> me 1  </button>
-  <button onclick="document.getElementById('card_left_column_alt').scrollBy(0,400);"> you 1 </button>
-
-  <button onclick="document.getElementById('card_left_column_alt').scroll(0,300);"> gome </button>
-  <button onclick="document.getElementById('card_left_column_alt').scroll(0,400);"> goyou </button>
-
             </div>
         </div>
 
@@ -195,6 +186,14 @@
             <input id="tilesetReplaceInput" type="file" style="display: none" />
             <button style="cursor: default;" id="removeTilesetBtn" title="⚠️ delete this tileset ⚠️">🗑️</button>
             </div>
+
+  <button onclick="document.getElementById('card_left_column_alt').scrollTo(0,100);">1️⃣</button>
+  <button onclick="document.getElementById('card_left_column_alt').scrollTo(0,200);">2️⃣</button>
+  <button onclick="document.getElementById('card_left_column_alt').scrollTo(0,300);">3️⃣</button>
+  
+  <button onclick="document.getElementById('card_left_column_alt').scroll(0,400);">4️⃣</button>
+  <button onclick="document.getElementById('card_left_column_alt').scroll(0,500);">5️⃣</button>
+  <button onclick="document.getElementById('card_left_column_alt').scroll(0,600);">6️⃣</button>
         
         <div style="display: none; visibility: hidden;" class="select_container layer sticky_top sticky_left" id="tilesetSelectContainer">
             <span id="setSymbolsVisBtn">👓️</span>
