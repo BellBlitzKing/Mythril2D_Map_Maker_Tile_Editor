@@ -306,7 +306,7 @@
 
             <text title="Press the Arrow ▶ to show / hide map & layer features">🌐  </text>
             <select style="width: 145px;" title="Pick Map from the list" name="mapsData" id="mapsDataSel"></select>
-            <button style="border: none; background-color: transparent;" id="renameMapBtn" title="Rename this Map">🎚️</button>
+            <button style="border: none; background-color: transparent;" id="renameMapBtn" title="Rename this Map">✍️</button>
             
             <div style="display: none; visibility: hidden;" id="popup1" class="overlay">
             <div class="popup">
@@ -330,8 +330,8 @@
 
 <div style="margin-bottom: 8px; margin-top: 8px; width: 199px; background-color: transparent; justify-content: center;" id="mapSelectContainer" class="tilemaps_selector">
 
-            <button style="font-size: small; cursor: cell; width: 55px;" id="addMapBtn" title="Add New Map">✚ Map</button>
-            <button style="font-size: small; cursor: cell; width: 55px;" id="addLayerBtn" title="Add new layer">✚ Layer</button>
+            <button style="font-size: small; cursor: cell; width: 55px;" id="addMapBtn" title="Add New Map"><small>✚</small> map</button>
+            <button style="font-size: small; cursor: cell; width: 55px;" id="addLayerBtn" title="Add new layer"><small>✚</small> layer</button>
             <button style="cursor: cell; width: 30px;" id="duplicateMapBtn" title="Clone Copy this Map"><b>⧉</b></button>
             <button style="width: 30px;" id="removeMapBtn" title="⚠️ Delete this Map ⚠️">🗑️</button>
             <a style="display: none; visibility: hidden; cursor: help; text-decoration: none;" title="Settings and grid options" class="button" href="#popup1">⚙️</a>
