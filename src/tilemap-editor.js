@@ -177,17 +177,17 @@
           </div>
         </details>
 
-            <div style="display: inline-flow; border-radius: 6px; padding-top: 8px; background-color: #28344290;"  class="select_container layer sticky_top sticky_left"  id="mapSelectContainer" style="margin-bottom: 5px">
+            <div style="display: block; border-radius: 6px; padding-top: 8px; background-color: #28344290;"  class="select_container layer sticky_top sticky_left"  id="mapSelectContainer" style="margin-bottom: 5px">
             
             <small style="cursor: default; color: gold !important;" title="Pick Tilesets from the dropdown list">Tiles: </small>
             <select style="max-width: 122px; min-width: 122px; cursor: pointer; margin-left: 3px;" name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
-            <button style="cursor: cell;" id="addTilesetBtn" title="add a new tileset (upload)">✚</button>
-            <input id="tilesetReadInput" type="file" style="display: none" />
+            <!-- button style="cursor: cell;" id="addTilesetBtn" title="add a new tileset (upload)">✚</button -->
+            <!-- input id="tilesetReadInput" type="file" style="display: none"></input -->
             <button style="font-size: 15px;" id="replaceTilesetBtn" title="replace this tileset (upload)"><b>⇄</b></button>
-            <input id="tilesetReplaceInput" type="file" style="display: none" />
-            <button style="cursor: default;" id="removeTilesetBtn" title="⚠️ delete this tileset ⚠️">🗑️</button>
+            <input id="tilesetReplaceInput" type="file" style="display: none"></input>
+            <!-- button style="cursor: default;" id="removeTilesetBtn" title="⚠️ delete this tileset ⚠️">🗑️</button -->
 
-                <div style="border-radius: 6px; padding-top: 8px; background-color: #28344290;">
+                <span style="margin-top: 8px;">
                   <button title="Tile Category" style="font-size: medium; cursor: pointer; border-color: #283442; border-radius: 3px; background-color: #283442;" onclick="document.getElementById('card_left_column_alt').scrollTo({ left: 0, top: 500, behavior: 'smooth'});">1️⃣</button>
                   <button style="font-size: medium; cursor: pointer; border-color: #283442; border-radius: 3px; background-color: #283442;" onclick="document.getElementById('card_left_column_alt').scrollTo(0,200);">2️⃣</button>
                   <button style="font-size: medium; cursor: pointer; border-color: #283442; border-radius: 3px; background-color: #283442;" onclick="document.getElementById('card_left_column_alt').scrollTo(0,300);">3️⃣</button>
@@ -195,7 +195,7 @@
                   <button style="font-size: medium; cursor: pointer; border-color: #283442; border-radius: 3px; background-color: #283442;" onclick="document.getElementById('card_left_column_alt').scroll(0,400);">4️⃣</button>
                   <button style="font-size: medium; cursor: pointer; border-color: #283442; border-radius: 3px; background-color: #283442;" onclick="document.getElementById('card_left_column_alt').scroll(0,500);">5️⃣</button>
                   <button style="font-size: medium; cursor: pointer; border-color: #283442; border-radius: 3px; background-color: #283442;" onclick="document.getElementById('card_left_column_alt').scrollTo({ left: 0, top: 500, behavior: 'smooth'});">6️⃣</button>
-                </div> 
+                </span> 
 
             </div>
 
