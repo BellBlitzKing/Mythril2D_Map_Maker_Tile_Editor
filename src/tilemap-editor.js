@@ -330,8 +330,8 @@
 
 <div style="width: 199px; background-color: transparent; justify-content: center;" id="mapSelectContainer" class="tilemaps_selector">
 
-            <button style="cursor: cell; width: 30px;" id="addMapBtn" title="Add New Map">✚ Map</button>
-            <button style="cursor: cell;" id="addLayerBtn" title="Add new layer">✚ Layer</button>
+            <button style="font-size: small; cursor: cell; width: 55px;" id="addMapBtn" title="Add New Map">✚ Map</button>
+            <button style="font-size: small; cursor: cell; width: 55px;" id="addLayerBtn" title="Add new layer">✚ Layer</button>
             <button style="cursor: cell; width: 30px;" id="duplicateMapBtn" title="Clone Copy this Map"><b>⧉</b></button>
             <button style="width: 30px;" id="removeMapBtn" title="⚠️ Delete this Map ⚠️">🗑️</button>
             <a style="display: none; visibility: hidden; cursor: help; text-decoration: none;" title="Settings and grid options" class="button" href="#popup1">⚙️</a>
@@ -438,8 +438,7 @@
                 <div title="slider-wrapper" class="item">
                     <small><br>
                     <div style="font-size: small;" class="slider-wrapper">
-                      <br>
-                      <text title="Glass See-through transparent opacity">👁️ 🪟</text>
+                      <text title="Glass See-through transparent opacity">  👁️🪟</text>
                       <input title="Glass See-through transparent opacity" style="width: 120px; height: 5px;" type="range" min="0" max="1" value="1" id="layerOpacitySlider" step="0.01">
                       <output for="layerOpacitySlider" id="layerOpacitySliderValue">${maps[ACTIVE_MAP].layers[newLayer]?.opacity}</output>
                     </div>
