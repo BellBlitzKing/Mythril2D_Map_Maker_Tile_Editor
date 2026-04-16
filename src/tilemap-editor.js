@@ -143,8 +143,6 @@
             <div class="tileset_opt_field">
                 <span class="flex">h </span><input title="How Tall / Change Height of Map" id="canvasHeightInp" value="1" type="number" min="1">
                 <span class="flex">  w </span><input title="How Wide / Change Width of Map" id="canvasWidthInp" value="1" type="number" min="1">
-                <span title="Change Grid ⊞ Tile Size" style="cursor: default;" >  grid:  </span>
-                <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
             </div>
 
         <div class="tool_wrapper">
@@ -179,12 +177,16 @@
 
             <div style="height: 75px; display: block; border-radius: 6px; padding-top: 8px; background-color: #28344290;"  class="select_container layer sticky_top sticky_left"  id="mapSelectContainer" style="margin-bottom: 5px">
             
-            <small style="cursor: default; color: gold !important;" title="Pick Tilesets from the dropdown list">Tiles: </small>
+            <label style="cursor: default; title="Pick Tilesets from the dropdown list">👉</label>
             <select style="max-width: 122px; min-width: 122px; cursor: pointer; margin-left: 3px;" name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
+
+                <span title="Change Grid ⊞ Tile Size" style="cursor: default;" >  g: </span>
+                <input type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
+            
             <button style="cursor: cell;" id="addTilesetBtn" title="add a new tileset (upload)">✚</button>
-            <input id="tilesetReadInput" type="file" style="display: none"></input>
-            <button style="font-size: 15px;" id="replaceTilesetBtn" title="replace this tileset (upload)"><b>⇄</b></button>
-            <input id="tilesetReplaceInput" type="file" style="display: none"></input>
+            <input id="tilesetReadInput" type="file" style="display: none; visibility: hidden;"></input>
+            <button style="display: none; visibility: hidden; font-size: 15px;" id="replaceTilesetBtn" title="replace this tileset (upload)"><b>⇄</b></button>
+            <input id="tilesetReplaceInput" type="file" style="display: none; visibility: hidden; "></input>
             <button style="display: none; visibility: hidden; cursor: default;" id="removeTilesetBtn" title="⚠️ delete this tileset ⚠️">🗑️</button>
             <br>
                 <div style="margin-top: 5px; margin-bottom: 5px;">
@@ -196,6 +198,15 @@
                   <button style="font-size: medium; cursor: pointer; border-color: #283442; border-radius: 3px; background-color: #283442;" onclick="document.getElementById('card_left_column_alt').scrollTo({ left: 0, top: 400, behavior: 'smooth'});">4️⃣</button>
                   <button style="font-size: medium; cursor: pointer; border-color: #283442; border-radius: 3px; background-color: #283442;" onclick="document.getElementById('card_left_column_alt').scrollTo({ left: 0, top: 500, behavior: 'smooth'});">5️⃣</button>
                   <button style="font-size: medium; cursor: pointer; border-color: #283442; border-radius: 3px; background-color: #283442;" onclick="document.getElementById('card_left_column_alt').scrollTo({ left: 0, top: 600, behavior: 'smooth'});">6️⃣</button>
+
+                  <br><br>
+                  <button style="font-size: medium; cursor: pointer; border-color: #283442; border-radius: 3px; background-color: #283442;" onclick="document.getElementById('card_left_column_alt').scrollTo({ left: 0, top: 100, behavior: 'smooth'});">1️⃣</button>
+                  <button style="font-size: medium; cursor: pointer; border-color: #283442; border-radius: 3px; background-color: #283442;" onclick="document.getElementById('card_left_column_alt').scrollTo({ left: 0, top: 200, behavior: 'smooth'});">2️⃣</button>
+                  <button style="font-size: medium; cursor: pointer; border-color: #283442; border-radius: 3px; background-color: #283442;" onclick="document.getElementById('card_left_column_alt').scrollTo({ left: 0, top: 300, behavior: 'smooth'});">3️⃣</button>
+                  
+                  <button style="font-size: medium; cursor: pointer; border-color: #283442; border-radius: 3px; background-color: #283442;" onclick="document.getElementById('card_left_column_alt').scrollTo({ left: 0, top: 400, behavior: 'smooth'});">4️⃣</button>
+                  <button style="font-size: medium; cursor: pointer; border-color: #283442; border-radius: 3px; background-color: #283442;" onclick="document.getElementById('card_left_column_alt').scrollTo({ left: 0, top: 500, behavior: 'smooth'});">5️⃣</button>
+
                 </div> 
 
             </div>
