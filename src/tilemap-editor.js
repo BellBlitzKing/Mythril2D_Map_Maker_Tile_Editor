@@ -175,6 +175,8 @@
           </div>
         </details>
 
+<details>
+<summary>
         <div style="text-align: center; height: 100px; display: block; border-radius: 6px; padding-top: 8px; background-color: #28344290;"  class="select_container layer sticky_top sticky_left"  id="mapSelectContainer" style="margin-bottom: 5px">
             
             <label style="cursor: default; title="Pick Tilesets from the dropdown list">👉</label>
@@ -182,7 +184,7 @@
 
                 <span title="Change Grid ⊞ Tile Size" style="cursor: default;" >⊞</span>
                 <input style="width: 39px;" type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
-            
+   </summary>         
             
             
             <input id="tilesetReadInput" type="file" style="display: none; visibility: hidden;"></input>
@@ -213,6 +215,8 @@
                 </div> 
 
             </div>
+
+</details>
 
         <div style="display: none; visibility: hidden;" class="select_container layer sticky_top sticky_left" id="tilesetSelectContainer">
             <span id="setSymbolsVisBtn">👓️</span>
