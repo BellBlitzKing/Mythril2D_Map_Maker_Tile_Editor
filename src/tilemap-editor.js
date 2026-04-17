@@ -127,10 +127,11 @@
               <input id="tool2" type="radio" value="2" name="tool" class="hidden"/> 
               <label style="cursor: move; text-decoration-color: lightskyblue !important; text-decoration: underline; text-underline-offset: 7px;" for="tool2" title="move and scroll around the map ⊞" data-value="2"> ◀🌐▶ </label>
               <input id="tool3" type="radio" value="3" name="tool" class="hidden"/> 
-              <label style="text-decoration-color: palegreen !important; text-decoration: underline; text-underline-offset: 7px;" for="tool4" title="draw/pick random tile from selected tiles" data-value="4"> 🎲📚 </label>
-               <input id="tool5" type="radio" value="5" name="tool" class="hidden"/> 
               <label style="text-decoration-color: mistyrose !important; text-decoration: underline; text-underline-offset: 7px;" for="tool3" title="pick tile to copy" data-value="3"> 🎨👆 </label>
               <input id="tool4" type="radio" value="4" name="tool" class="hidden"/> 
+              <label style="text-decoration-color: palegreen !important; text-decoration: underline; text-underline-offset: 7px;" for="tool4" title="draw/pick random tile from selected tiles" data-value="4"> 🎲📚 </label>
+              <input id="tool5" type="radio" value="5" name="tool" class="hidden"/> 
+
               <label style="text-decoration-color: deepskyblue !important; text-decoration: underline; text-underline-offset: 7px;" for="tool5" title="fill in tile on selected layer" data-value="5"> 🪣🧱 </label>
               <button style="cursor: pointer; text-decoration-color: #FF5C5C !important; text-decoration: underline; text-underline-offset: 7px; border: none; background-color: inherit; margin: 0px; padding: 0px;" id="clearCanvasBtn" title="⚠️ clear map of all tiles ⚠️">🗑️</button>
                 <label></label>
@@ -302,11 +303,11 @@
         
       <details style="margin-right: 20px; margin-top: 5px;" class="card_right-column layers" open>
 
-<summary title="Press the ▶ Arrow to show / hide map & layer features" style="color: gold !important; margin-top: 10px; text-align: center;">
+<summary title="Press the ▶ Arrow to show / hide the tools" style="color: gold !important; margin-top: 10px; text-align: center;">
       
       <div style="width: 180px; background-color: transparent;" id="mapSelectContainer" class="tilemaps_selector">
 
-            <text title="Press the Arrow ▶ to show / hide map & layer features">🌐  </text>
+            <text title="Press the Arrow ▶ to show / hide the tools">🌐  </text>
             <select style="width: 145px;" title="Pick Map from the list" name="mapsData" id="mapsDataSel"></select>
             <button style="border: none; background-color: transparent;" id="renameMapBtn" title="Rename this Map">✍️</button>
             
@@ -335,8 +336,8 @@
             
             <button style="font-size: small; cursor: cell; width: 55px;" id="addLayerBtn" title="Add New Layer to Map"><small>✚</small> layer</button>
             <button style="font-size: small; cursor: cell; width: 55px;" id="addMapBtn" title="Add New Map"><small>✚</small> map</button>
-            <button style="cursor: cell; width: 30px;" id="duplicateMapBtn" title="Clone Copy this Map"><b>⧉</b></button>
-            <button style="width: 30px;" id="removeMapBtn" title="⚠️ Delete this Map ⊞ ⚠️">🗑️</button>
+            <button style="cursor: cell; width: 30px;" id="duplicateMapBtn" title="Clone Copy Map"><b>⧉</b></button>
+            <button style="width: 30px;" id="removeMapBtn" title="⚠️ Delete this Map ⚠️">🗑️</button>
             <a style="display: none; visibility: hidden; cursor: help; text-decoration: none;" title="Settings and grid options" class="button" href="#popup1">⚙️</a>
 </div>
 
@@ -1597,7 +1598,7 @@
             transformer: drawAnaliticsReport
         }
         apiTileMapExporters.exportTilesFromMap = {
-            name: "Get tileset from map 📚 🗺️",
+            name: "Save used Tiles as image 📚",
             transformer: exportUniqueTiles
         }
         apiTileMapImporters = tileMapImporters;
