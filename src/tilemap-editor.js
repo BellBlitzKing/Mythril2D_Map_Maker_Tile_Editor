@@ -141,8 +141,8 @@
         </div>
 
             <div class="tileset_opt_field">
-                <span class="flex">h </span><input title="How Tall / Change Height of Map" id="canvasHeightInp" value="1" type="number" min="1">
-                <span class="flex">  w </span><input title="How Wide / Change Width of Map" id="canvasWidthInp" value="1" type="number" min="1">
+                <label title="How Tall / Change Height of Map ⊞" style="color: gold;">h </label><input title="How Tall / Change Height of Map ⊞" id="canvasHeightInp" value="1" type="number" min="1">
+                <label title="How Wide / Change Width of Map ⊞" style="color: gold;">  w </label><input title="How Wide / Change Width of Map ⊞" id="canvasWidthInp" value="1" type="number" min="1">
             </div>
 
         <div class="tool_wrapper">
@@ -293,9 +293,9 @@
         <div class="card_right-column" style="position:relative" id="canvas_drag_area">
         <div style="cursor: default;" class="canvas_wrapper" id="canvas_wrapper">
           <canvas id="mapCanvas" width="${width}" height="${height}"></canvas>
-          <div title="How Tall / Change Height of Map" class="canvas_resizer" resizerdir="y"><input value="1" type="number" min="1" resizerdir="y"><small><span>   ⬆ h ⬇</span></small>
+          <div title="How Tall / Change Height of Map ⊞" class="canvas_resizer" resizerdir="y"><input value="1" type="number" min="1" resizerdir="y"><small><span title="How Tall / Change Height of Map ⊞" style="color: gold;">   ⬆ h ⬇</span></small>
           </div>
-          <div title="How Wide / Change Width of Map" class="canvas_resizer vertical" resizerdir="x"><input value="${mapTileWidth}" type="number" min="1" resizerdir="x"><small><span>⬅ w ➡</span></small>
+          <div title="How Wide / Change Width of Map ⊞" class="canvas_resizer vertical" resizerdir="x"><input value="${mapTileWidth}" type="number" min="1" resizerdir="x"><small><span title="How Wide / Change Width of Map ⊞" style="color: gold;">⬅ w ➡</span></small>
           </div>
         </div>
     </div>
@@ -332,8 +332,9 @@
 
 <div style="margin-bottom: 8px; margin-top: 8px; width: 199px; background-color: transparent; justify-content: center;" id="mapSelectContainer" class="tilemaps_selector">
 
+            
+            <button style="font-size: small; cursor: cell; width: 55px;" id="addLayerBtn" title="Add New Layer to Map"><small>✚</small> layer</button>
             <button style="font-size: small; cursor: cell; width: 55px;" id="addMapBtn" title="Add New Map"><small>✚</small> map</button>
-            <button style="font-size: small; cursor: cell; width: 55px;" id="addLayerBtn" title="Add new layer"><small>✚</small> layer</button>
             <button style="cursor: cell; width: 30px;" id="duplicateMapBtn" title="Clone Copy this Map"><b>⧉</b></button>
             <button style="width: 30px;" id="removeMapBtn" title="⚠️ Delete this Map ⚠️">🗑️</button>
             <a style="display: none; visibility: hidden; cursor: help; text-decoration: none;" title="Settings and grid options" class="button" href="#popup1">⚙️</a>
