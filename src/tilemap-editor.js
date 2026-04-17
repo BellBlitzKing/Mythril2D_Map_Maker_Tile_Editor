@@ -141,8 +141,8 @@
         </div>
 
             <div class="tileset_opt_field">
-                <label title="How Tall / Change Height of Map ⊞" style="color: gold;">h </label><input title="How Tall / Change Height of Map ⊞" id="canvasHeightInp" value="1" type="number" min="1">
-                <label title="How Wide / Change Width of Map ⊞" style="color: gold;">  w </label><input title="How Wide / Change Width of Map ⊞" id="canvasWidthInp" value="1" type="number" min="1">
+                <label title="How Tall / Change Height of Map ⊞" style="color: gold;">h </label><input type="number" title="How Tall / Change Height of Map ⊞" id="canvasHeightInp" value="1" type="number" min="1">
+                <label title="How Wide / Change Width of Map ⊞" style="color: gold;">  w </label><input type="number" title="How Wide / Change Width of Map ⊞" id="canvasWidthInp" value="1" type="number" min="1">
             </div>
 
         <div class="tool_wrapper">
@@ -293,9 +293,9 @@
         <div class="card_right-column" style="position:relative" id="canvas_drag_area">
         <div style="cursor: default;" class="canvas_wrapper" id="canvas_wrapper">
           <canvas id="mapCanvas" width="${width}" height="${height}"></canvas>
-          <div title="How Tall / Change Height of Map ⊞" class="canvas_resizer" resizerdir="y"><input value="1" type="number" min="1" resizerdir="y"><small><span title="How Tall / Change Height of Map ⊞" style="color: gold;">   ⬆ h ⬇</span></small>
+          <div title="How Tall / Change Height of Map ⊞" class="canvas_resizer" resizerdir="y"><input style="opacity: 1;" value="1" type="number" min="1" resizerdir="y"><small><span title="How Tall / Change Height of Map ⊞">   ⬆ h ⬇</span></small>
           </div>
-          <div title="How Wide / Change Width of Map ⊞" class="canvas_resizer vertical" resizerdir="x"><input value="${mapTileWidth}" type="number" min="1" resizerdir="x"><small><span title="How Wide / Change Width of Map ⊞" style="color: gold;">⬅ w ➡</span></small>
+          <div title="How Wide / Change Width of Map ⊞" class="canvas_resizer vertical" resizerdir="x"><input style="opacity: 1;" value="${mapTileWidth}" type="number" min="1" resizerdir="x"><small><span title="How Wide / Change Width of Map ⊞">⬅ w ➡</span></small>
           </div>
         </div>
     </div>
