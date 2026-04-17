@@ -179,12 +179,12 @@
         <div style="min-width: 266px; width: fit-content; height: fit-content; text-align: center; height: 100px; display: block; border-radius: 6px; padding-top: 8px; background-color: #28344290;"  class="select_container layer sticky_top sticky_left"  id="mapSelectContainer" style="margin-bottom: 5px">
 
 <details>
-<summary style="margin-bottom: 10px;">            
+<summary style="color: gold !important; margin-bottom: 10px;">           
             <label style="cursor: default; title="Pick Tilesets from the dropdown list">👉</label>
-            <select style="max-width: 122px; min-width: 122px; cursor: pointer; margin-left: 3px;" name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
+            <select title="Pick Tilesets from the dropdown list" style="max-width: 122px; min-width: 122px; cursor: pointer; margin-left: 3px;" name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
 
                 <span title="Change Grid ⊞ Tile Size" style="cursor: default;" >⊞</span>
-                <input style="width: 39px;" type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
+                <input title="Change Grid ⊞ Tile Size" style="width: 39px;" type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
    </summary>         
             
             
