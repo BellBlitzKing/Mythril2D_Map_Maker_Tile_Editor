@@ -109,7 +109,7 @@
         </div>
         
         <div>
-            <div id="toolButtonsWrapper" class="tool_wrapper"> <label style="color: gold !important;" title="Use tools to the right to build your map"><small>Tools:</small></label>
+            <div id="toolButtonsWrapper" class="tool_wrapper"> <label style="color: gold !important;" title="Use Tools to build your Map"><small>Tools:</small></label>
               <input id="tool0" type="radio" value="0" name="tool" checked class="hidden"/>
               <label for="tool0" title="draw tiles" data-value="0" class="menu">
                   <div style="text-decoration-color: gold !important; text-decoration: underline; text-underline-offset: 7px;" id="flipBrushIndicator">✏️</div>
@@ -177,7 +177,7 @@
         </details>
 
 
-        <div style="min-width: 267px; width: fit-content; height: fit-content; text-align: center; display: block; padding-top: 7px; background-color: #28344290;"  class="select_container layer sticky_top sticky_left"  id="mapSelectContainer" style="margin-bottom: 5px">
+        <div style="min-width: 266px; width: fit-content; height: fit-content; text-align: center; display: block; padding-top: 7px; background-color: #28344290;"  class="select_container layer sticky_top sticky_left"  id="mapSelectContainer" style="margin-bottom: 5px">
 
 <details open>
 <summary style="color: gold !important; margin-bottom: 10px;">           
@@ -308,7 +308,7 @@
       <div style="width: 180px; background-color: transparent;" id="mapSelectContainer" class="tilemaps_selector">
 
             <text title="Press the Arrow ▶ to show / hide the tools">🌐  </text>
-            <select style="width: 145px;" title="Pick Map from the list" name="mapsData" id="mapsDataSel"></select>
+            <select style="width: 145px; cursor: pointer;" title="Pick Map from the list" name="mapsData" id="mapsDataSel"></select>
             <button style="border: none; background-color: transparent;" id="renameMapBtn" title="Rename this Map">✍️</button>
             
             <div style="display: none; visibility: hidden;" id="popup1" class="overlay">
