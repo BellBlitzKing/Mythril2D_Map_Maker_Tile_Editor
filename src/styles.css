@@ -290,7 +290,7 @@ cursor: pointer;
 
 .layers {
   /*height: 100%;*/
-  width: 200px;
+  width: 195px;
   overflow: auto;
   display: flex;
   flex-direction: column;
