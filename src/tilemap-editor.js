@@ -175,10 +175,11 @@
           </div>
         </details>
 
-<details>
-<summary>
+
         <div style="text-align: center; height: 100px; display: block; border-radius: 6px; padding-top: 8px; background-color: #28344290;"  class="select_container layer sticky_top sticky_left"  id="mapSelectContainer" style="margin-bottom: 5px">
-            
+
+<details>
+<summary>            
             <label style="cursor: default; title="Pick Tilesets from the dropdown list">👉</label>
             <select style="max-width: 122px; min-width: 122px; cursor: pointer; margin-left: 3px;" name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
 
@@ -213,10 +214,10 @@
                   <button style="font-size: medium; cursor: cell; border-color: #283442; border-radius: 3px; background-color: #283442;" id="addTilesetBtn" title="add a new tileset (upload)">➕</button>
                   <button style="font-size: medium; cursor: default; border-color: #283442; border-radius: 3px; background-color: #283442;" id="removeTilesetBtn" title="⚠️ delete this tileset ⚠️">🗑️</button>
                 </div> 
-
+</details>
             </div>
 
-</details>
+
 
         <div style="display: none; visibility: hidden;" class="select_container layer sticky_top sticky_left" id="tilesetSelectContainer">
             <span id="setSymbolsVisBtn">👓️</span>
