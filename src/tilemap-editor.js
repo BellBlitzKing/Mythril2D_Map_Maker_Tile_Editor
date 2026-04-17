@@ -302,7 +302,7 @@
         
       <details style="margin-right: 20px; margin-top: 5px;" class="card_right-column layers" open>
 
-<summary title="Press the ▶ Arrow to show / hide map & layer features" style="color: gold !important; margin-top: 10px;">
+<summary title="Press the ▶ Arrow to show / hide map & layer features" style="color: gold !important; margin-top: 10px; text-align: center;">
       
       <div style="width: 180px; background-color: transparent;" id="mapSelectContainer" class="tilemaps_selector">
 
