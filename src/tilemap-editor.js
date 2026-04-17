@@ -331,7 +331,7 @@
         
 </summary>
 
-<div style="margin-bottom: 8px; margin-top: 8px; width: 199px; background-color: transparent; justify-content: center;" id="mapSelectContainer" class="tilemaps_selector">
+<div style="margin-bottom: 8px; margin-top: 8px; width: 195px; background-color: transparent; justify-content: center;" id="mapSelectContainer" class="tilemaps_selector">
 
             
             <button style="font-size: small; cursor: cell; width: 55px;" id="addLayerBtn" title="Add New Layer to Map"><small>✚</small> layer</button>
