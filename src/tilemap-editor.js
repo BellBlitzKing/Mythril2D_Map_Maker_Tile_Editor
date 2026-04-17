@@ -191,9 +191,7 @@
             <input id="tilesetReadInput" type="file" style="display: none; visibility: hidden;"></input>
             <button style="display: none; visibility: hidden; font-size: 15px;" id="replaceTilesetBtn" title="replace this tileset (upload)"><b>⇄</b></button>
             <input id="tilesetReplaceInput" type="file" style="display: none; visibility: hidden; "></input>
-            
-            
-            <br>
+
                 <div style="margin-top: 5px; margin-bottom: 5px;">
                 
                   <button style="font-size: medium; cursor: pointer; border-color: #283442; border-radius: 3px; background-color: #283442;" onclick="document.getElementById('card_left_column_alt').scrollTo({ left: 0, top: 100, behavior: 'smooth'});">1️⃣</button>
