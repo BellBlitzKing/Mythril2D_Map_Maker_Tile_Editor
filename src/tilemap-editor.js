@@ -125,14 +125,14 @@
               <input id="tool1" type="radio" value="1" name="tool" class="hidden"/>
               <label style="text-decoration-color: red !important; text-decoration: underline; text-underline-offset: 7px;" for="tool1" title="erase tiles" data-value="1">❌</label>
               <input id="tool2" type="radio" value="2" name="tool" class="hidden"/> 
-              <label style="cursor: move; text-decoration-color: lightskyblue !important; text-decoration: underline; text-underline-offset: 7px;" for="tool2" title="move and scroll around the map" data-value="2"> ◀🌐▶ </label>
+              <label style="cursor: move; text-decoration-color: lightskyblue !important; text-decoration: underline; text-underline-offset: 7px;" for="tool2" title="move and scroll around the map ⊞" data-value="2"> ◀🌐▶ </label>
               <input id="tool3" type="radio" value="3" name="tool" class="hidden"/> 
-              <label style="text-decoration-color: mistyrose !important; text-decoration: underline; text-underline-offset: 7px;" for="tool3" title="pick tile to copy" data-value="3"> 🎨👆 </label>
-              <input id="tool4" type="radio" value="4" name="tool" class="hidden"/> 
               <label style="text-decoration-color: palegreen !important; text-decoration: underline; text-underline-offset: 7px;" for="tool4" title="draw/pick random tile from selected tiles" data-value="4"> 🎲📚 </label>
                <input id="tool5" type="radio" value="5" name="tool" class="hidden"/> 
+              <label style="text-decoration-color: mistyrose !important; text-decoration: underline; text-underline-offset: 7px;" for="tool3" title="pick tile to copy" data-value="3"> 🎨👆 </label>
+              <input id="tool4" type="radio" value="4" name="tool" class="hidden"/> 
               <label style="text-decoration-color: deepskyblue !important; text-decoration: underline; text-underline-offset: 7px;" for="tool5" title="fill in tile on selected layer" data-value="5"> 🪣🧱 </label>
-              <button style="text-decoration-color: #FF5C5C !important; text-decoration: underline; text-underline-offset: 7px; border: none; background-color: inherit; margin: 0px; padding: 0px;" id="clearCanvasBtn" title="⚠️ clear map of all tiles ⚠️">🗑️</button>
+              <button style="cursor: pointer; text-decoration-color: #FF5C5C !important; text-decoration: underline; text-underline-offset: 7px; border: none; background-color: inherit; margin: 0px; padding: 0px;" id="clearCanvasBtn" title="⚠️ clear map of all tiles ⚠️">🗑️</button>
                 <label></label>
                 <label style="font-size: medium;" id="undoBtn" title="Undo action">↩️️</label>
                 <label style="font-size: medium;" id="redoBtn" title="Redo action">↪️</label>
@@ -210,7 +210,7 @@
                   <button style="font-size: medium; cursor: pointer; border-color: #283442; border-radius: 3px; background-color: #283442;" onclick="document.getElementById('card_left_column_alt').scrollTo({ left: 0, top: 400, behavior: 'smooth'});">4️⃣</button>
                   
                   <button style="font-size: medium; cursor: cell; border-color: #283442; border-radius: 3px; background-color: #283442;" id="addTilesetBtn" title="add a new tileset (upload)">➕</button>
-                  <button style="font-size: medium; cursor: default; border-color: #283442; border-radius: 3px; background-color: #283442;" id="removeTilesetBtn" title="⚠️ delete this tileset ⚠️">🗑️</button>
+                  <button style="font-size: medium; cursor: pointer; border-color: #283442; border-radius: 3px; background-color: #283442;" id="removeTilesetBtn" title="⚠️ delete this tileset ⚠️">🗑️</button>
                 </div> 
 </details>
             </div>
@@ -336,7 +336,7 @@
             <button style="font-size: small; cursor: cell; width: 55px;" id="addLayerBtn" title="Add New Layer to Map"><small>✚</small> layer</button>
             <button style="font-size: small; cursor: cell; width: 55px;" id="addMapBtn" title="Add New Map"><small>✚</small> map</button>
             <button style="cursor: cell; width: 30px;" id="duplicateMapBtn" title="Clone Copy this Map"><b>⧉</b></button>
-            <button style="width: 30px;" id="removeMapBtn" title="⚠️ Delete this Map ⚠️">🗑️</button>
+            <button style="width: 30px;" id="removeMapBtn" title="⚠️ Delete this Map ⊞ ⚠️">🗑️</button>
             <a style="display: none; visibility: hidden; cursor: help; text-decoration: none;" title="Settings and grid options" class="button" href="#popup1">⚙️</a>
 </div>
 
