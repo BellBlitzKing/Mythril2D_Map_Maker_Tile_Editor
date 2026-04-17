@@ -177,7 +177,7 @@
         </details>
 
 
-        <div style="min-width: 266px; width: fit-content; height: fit-content; text-align: center; display: block; border-radius: 6px; padding-top: 8px; background-color: #28344290;"  class="select_container layer sticky_top sticky_left"  id="mapSelectContainer" style="margin-bottom: 5px">
+        <div style="min-width: 267px; width: fit-content; height: fit-content; text-align: center; display: block; padding-top: 7px; background-color: #28344290;"  class="select_container layer sticky_top sticky_left"  id="mapSelectContainer" style="margin-bottom: 5px">
 
 <details open>
 <summary style="color: gold !important; margin-bottom: 10px;">           
