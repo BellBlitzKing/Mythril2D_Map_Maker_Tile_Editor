@@ -1220,7 +1220,7 @@
             mapTileWidth = size?.mapWidth;
             WIDTH = mapTileWidth * SIZE_OF_CROP * ZOOM;
             maps[ACTIVE_MAP].mapWidth = mapTileWidth;
-            document.querySelector(".canvas_resizer[resizerdir='x']").style=`left:${WIDTH}px`;
+            document.querySelector(".canvas_resizer[resizerdir='x']").style=`width: fit-content; left:${WIDTH}px`;
             document.querySelector(".canvas_resizer[resizerdir='x'] input").value = String(mapTileWidth);
             document.getElementById("canvasWidthInp").value  = String(mapTileWidth);
         }
@@ -1228,7 +1228,7 @@
             mapTileHeight = size?.mapHeight;
             HEIGHT = mapTileHeight * SIZE_OF_CROP * ZOOM;
             maps[ACTIVE_MAP].mapHeight = mapTileHeight;
-            document.querySelector(".canvas_resizer[resizerdir='y']").style=`top:${HEIGHT}px`;
+            document.querySelector(".canvas_resizer[resizerdir='y']").style=`width: fit-content; top:${HEIGHT}px`;
             document.querySelector(".canvas_resizer[resizerdir='y'] input").value = String(mapTileHeight);
             document.getElementById("canvasHeightInp").value  = String(mapTileHeight);
         }
