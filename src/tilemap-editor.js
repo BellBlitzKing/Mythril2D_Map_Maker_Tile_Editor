@@ -284,7 +284,7 @@
            </div>     
         </div>
 
-      <div style="border-color: #283442; border-radius: 6px; border-style: outset; border-width: 5px;" class="tileset-container">
+      <div style="border-color: #058d93; border-radius: 6px; border-style: outset; border-width: 5px;" class="tileset-container">
         <div class="tileset-container-selection"></div>
         <canvas id="tilesetCanvas" />
 <!--        <div id="tilesetGridContainer" class="tileset_grid_container"></div>-->
