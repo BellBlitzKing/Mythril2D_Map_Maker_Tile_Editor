@@ -185,7 +185,7 @@
             <select title="Pick Tilesets from the dropdown list" style="max-width: 122px; min-width: 122px; cursor: pointer; margin-left: 3px;" name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
 
                 <span title="Change Grid ⊞ Tile Size" style="cursor: default;" >⊞</span>
-                <input title="Change Grid ⊞ Tile Size" style="width: 39px;" type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
+                <input title="Change Grid ⊞ Tile Size" style="width: 45px;" type="number" id="cropSize" name="crop" placeholder="32" min="1" max="128">
    </summary>         
             
             
