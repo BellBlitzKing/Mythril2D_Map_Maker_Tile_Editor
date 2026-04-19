@@ -174,7 +174,7 @@
 .tileset_opt_field.header{
   padding: 3px;
   /*Added color to header*/
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   background-color: #283442;
 }
 .canvas_resizer.vertical{
