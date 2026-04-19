@@ -296,7 +296,7 @@
           <canvas id="mapCanvas" width="${width}" height="${height}"></canvas>
           <div style="width: fit-content;" title="How Tall / Change Height of Map ⊞" class="canvas_resizer" resizerdir="y"><input style="opacity: 1;" value="1" type="number" min="1" resizerdir="y"><small><br><span title="How Tall / Change Height of Map ⊞">   ⬆ h ⬇</span></small>
           </div>
-          <div style="width: fit-content;" title="How Wide / Change Width of Map ⊞" class="canvas_resizer vertical" resizerdir="x"><input style="opacity: 1;" value="${mapTileWidth}" type="number" min="1" resizerdir="x"><small><span title="How Wide / Change Width of Map ⊞">⬅ w ➡</span></small>
+          <div style=" width: fit-content; " title="How Wide / Change Width of Map ⊞" class="canvas_resizer vertical" resizerdir="x"><input style="opacity: 1;" value="${mapTileWidth}" type="number" min="1" resizerdir="x"><small><span title="How Wide / Change Width of Map ⊞">⬅ w ➡</span></small>
           </div>
         </div>
     </div>
@@ -1220,7 +1220,7 @@
             mapTileWidth = size?.mapWidth;
             WIDTH = mapTileWidth * SIZE_OF_CROP * ZOOM;
             maps[ACTIVE_MAP].mapWidth = mapTileWidth;
-            document.querySelector(".canvas_resizer[resizerdir='x']").style=`width: fit-content; left:${WIDTH}px`;
+            document.querySelector(".canvas_resizer[resizerdir='x']").style=`width:fit-content; left:${WIDTH}px`;
             document.querySelector(".canvas_resizer[resizerdir='x'] input").value = String(mapTileWidth);
             document.getElementById("canvasWidthInp").value  = String(mapTileWidth);
         }
