@@ -182,6 +182,7 @@
   transform-origin: left;
   /*cursor: col-resize;*/
   bottom: 0;
+  width: fit-content !important;
 }
 .canvas_wrapper{
   position: relative;
