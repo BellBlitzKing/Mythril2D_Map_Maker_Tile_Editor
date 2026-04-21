@@ -643,8 +643,9 @@
         selectionSize = [selWidth, selHeight]
         console.log(tileSets[tilesetDataSel.value].tileSize)
         const tileSize = tileSets[tilesetDataSel.value].tileSize;
-        tilesetSelection.style.left = `${x * tileSize * ZOOM}px`;
-        tilesetSelection.style.top = `${y * tileSize * ZOOM}px`;
+        // Update to only Zoom In or Zoom Out on the MAP instead of the left-hand Tileset
+        // tilesetSelection.style.left = `${x * tileSize * ZOOM}px`;
+        // tilesetSelection.style.top = `${y * tileSize * ZOOM}px`;
         tilesetSelection.style.width = `${selWidth * tileSize * ZOOM}px`;
         tilesetSelection.style.height = `${selHeight * tileSize * ZOOM}px`;
 
