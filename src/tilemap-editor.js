@@ -180,7 +180,7 @@
         <div style="min-width: 330px; width: fit-content; height: fit-content; text-align: center; display: block; padding-top: 7px; background-color: #28423af0;"  class="select_container layer sticky_top sticky_left"  id="mapSelectContainer" style="margin-bottom: 5px">
 
 <details open>
-<summary style="color: gold !important; margin-bottom: 10px;">           
+<summary style="color: gold !important; margin-bottom: 5px;">           
             <label style="cursor: default; title="Pick Tilesets from the dropdown list">👉</label>
             <select title="Pick Tilesets from the dropdown list" style="max-width: 122px; min-width: 122px; cursor: pointer; margin-left: 3px;" name="tileSetSelectData" id="tilesetDataSel" class="limited_select"></select>
 
@@ -197,7 +197,7 @@
             <button style="display: none; visibility: hidden; font-size: 15px;" id="replaceTilesetBtn" title="replace this tileset (upload)"><b>⇄</b></button>
             <input id="tilesetReplaceInput" type="file" style="display: none; visibility: hidden; "></input>
 
-                <div style="margin-top: 5px; margin-bottom: 5px;">
+                <div style="margin-top: 5px; margin-bottom: 10px;">
                                   
                   <button style="font-size: medium; cursor: pointer; border-color: #283442; border-radius: 3px; background-color: #283442;" onclick="document.getElementById('card_left_column_alt').scrollTo({ left: 0, top: 0, behavior: 'smooth'});">🌴</button>
                   <button style="font-size: medium; cursor: pointer; border-color: #283442; border-radius: 3px; background-color: #283442;" onclick="document.getElementById('card_left_column_alt').scrollTo({ left: 0, top: 290, behavior: 'smooth'});">🏔️</button>
