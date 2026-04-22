@@ -83,8 +83,8 @@
             <span>File Save 💾</span>
             <div class="dropdown" id="fileMenuDropDown">
                 <div style="font-size: small; margin-top: 10px; margin-bottom: 10px;">
-                <a style="display:inline; color: gold;" class="button item button-as-link" href="https://kingbell.itch.io/pixel-sprite-mixer">Give Review 🤩</a>
-                <a style="display:inline; color: dodgerblue;" class="button item button-as-link" href="https://kingbell.itch.io/pixel-sprite-mixer/rate">Get Tilesets 📥</a>
+                <a style="display:inline; color: gold;" class="button item button-as-link" href="https://kingbell.itch.io/pixel-sprite-mixer/rate">Give Review 🤩</a>
+                <a style="display:inline; color: dodgerblue;" class="button item button-as-link" href="https://kingbell.itch.io/pixel-sprite-mixer/purchase">Get Tilesets ⤵️</a>
                 </div>
                 <div id="popup2" class="overlay">
                 <div class="popup">
