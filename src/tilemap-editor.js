@@ -385,7 +385,7 @@
     let ACTIVE_MAP = "";
     let DISPLAY_SYMBOLS = false;
     let SHOW_GRID = false;
-    const getEmptyMap = (name="map", mapWidth =14, mapHeight=14, tileSize = 32, gridColor="#00FFFF") =>
+    const getEmptyMap = (name="map", mapWidth =12, mapHeight=16, tileSize = 32, gridColor="#00FFFF") =>
         ({layers: [getEmptyLayer("bottom-ground"), getEmptyLayer("middle"), getEmptyLayer("top")], name,
             mapWidth, mapHeight, tileSize, width: mapWidth * SIZE_OF_CROP,height: mapHeight * SIZE_OF_CROP, gridColor });
 
