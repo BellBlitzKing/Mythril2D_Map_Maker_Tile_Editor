@@ -335,8 +335,8 @@
                 tileSize = parseInt(extractedTileSizeMatch[1],10)
                 console.info("set tileSize from description", tileSize)
                 if(tileSize === 8){
-                  mapWidth = 14; // Detect map size for a gameboy room
-                  mapHeight = 14;
+                  mapWidth = 12; // Detect map size for a gameboy room
+                  mapHeight = 16;
                 }
               }
               extractedSourceMatch = image.description.match(/source\:\s*(.*)/);
