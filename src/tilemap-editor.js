@@ -395,7 +395,7 @@
     let ACTIVE_TOOL = 0;
     let ACTIVE_MAP = "";
     let DISPLAY_SYMBOLS = false;
-    let SHOW_GRID = false;
+    let SHOW_GRID = true;
     const getEmptyMap = (name="map", mapWidth =12, mapHeight=16, tileSize = 32, gridColor="#00FFFF") =>
         ({layers: [getEmptyLayer("bottom-ground"), getEmptyLayer("middle"), getEmptyLayer("top")], name,
             mapWidth, mapHeight, tileSize, width: mapWidth * SIZE_OF_CROP,height: mapHeight * SIZE_OF_CROP, gridColor });
@@ -2135,7 +2135,6 @@
             SHOW_GRID = e.target.checked;
             draw();
         })
-        document.getElementById("showGrid").click();
         document.getElementById("showGrid").checked = true;
 
         document.getElementById("undoBtn").addEventListener("click", undo);
