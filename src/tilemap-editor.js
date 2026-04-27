@@ -2135,6 +2135,8 @@
             SHOW_GRID = e.target.checked;
             draw();
         })
+        document.getElementById("showGrid").click();
+        document.getElementById("showGrid").checked = true;
 
         document.getElementById("undoBtn").addEventListener("click", undo);
         document.getElementById("redoBtn").addEventListener("click", redo);
